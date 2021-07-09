@@ -4,9 +4,10 @@
 repo info
 ```git remote add origin https://github.com/mcooper7649/my-portfolio.git
 git branch -M main
-git push -u origin main```
+git push -u origin main
+```
 
-[linktovideo](https://www.youtube.com/watch?v=NO7_jgzVgbc)
+[Walkthrough](https://www.youtube.com/watch?v=NO7_jgzVgbc)
 ## Overview
 --
 
