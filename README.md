@@ -291,3 +291,183 @@ Post Return
         - bio
             - Full Stack Developer Looking for an Opportunity to build an amazing company.
         - publish
+
+ 5. Now go back to the original blog post and choose yourself in the author dropdown.
+
+6. Repeat the steps to create 2nd blog post
+
+
+## Category Schema
+---
+
+1. inside the studio>schemas find category.js and delete it
+2. Inside of schema.js find category and remote it there too (two places)
+3. inside post.js
+    - remove the category object totally
+4. Now we should have category available on the backend of our Sanity Studio
+
+
+## Project.js schema
+---
+
+1. create project.js inside the schema folder
+2. also import project.js insdie schema.js
+    - then add it into the types
+3. Look at how we designed the proejct.js file its too large but to go over but nothing complex
+
+## Project Panel in Sanity
+---
+
+
+1. Alright lets create a dummy first project 
+    - fill out title
+    - place
+    - description
+    - project type
+    - link
+    - tags
+
+
+
+
+## Project.js Page Design
+---
+
+Project Function
+---
+
+1. were gonna be using react, useEffect, useState so import them first
+2. const projectData, setProjectData = useState(null)
+3. useEffect
+    - sanityClientFetch
+        - ALL types == project
+        - in the body get 
+            - title
+            - date
+            - place
+            - description
+            - projectType,
+            - links,
+            - tags
+        - then
+            - data argument => setProjectData(data)
+        - catch
+            - console.error
+            - []
+    
+
+Project Return
+---
+
+Similiar to our Post return we will have a layout like below:
+
+1. Main tag
+    - className="bg-green-100 min-h-screen p-12"
+    - Section tag
+        - className="container mx-auto"
+            - h1 tag
+                - className='text-5xl flex justify-center cursive'
+            - h2 tag
+                - className='text-lg text-gray-600 flex justify-center mb-12
+            - section tag
+                - className="grid grid-cols-2 gap-8"
+                - article tag
+                    - className='relative rounded-lg shadow-xl bg-white p-16'
+                    - h3 tag
+                        - className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700"
+                    - div tag
+                        - className="text-gray-500 text-xs space-x-4">
+                            - span
+                                - inside the span
+                                - ``<strong className="font-bold">Finished on</strong>:{" "}
+                                {new Date(project.date).toLocaleDateString()}``
+                            - span
+                                - inside the span
+                                - ``<strong className="font-bold">Company</strong>:{" "}
+                                {project.place}``
+                            - span
+                                - inside the span
+                                - `` <strong className="font-bold">Type</strong>:{" "}
+                                {project.projectType}``
+                            - p tag
+                                - className="my-6 text-lg text-gray-700 leading-relax"
+                                - content {project.description}
+                            - span 
+                                - role="img" aria-label="right pointer"  for emoji
+                                - insdie the span grab emoji
+                                    - cmd-control-space is quick command
+2. Mapping
+    - After the section tag before the article
+        - {ProjectData && ProjectData.map((project, index) => {
+
+        - })}  // wrap these 3 after article closing tag
+
+
+return code for Project.js
+```
+return (
+    <main className="bg-green-100 min-h-screen p-12">
+      <section className="container mx-auto">
+        <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
+        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+          Welcome to my projects page!
+        </h2>
+
+        <section className="grid grid-cols-2 gap-8">
+          {projectData &&
+            projectData.map((project, index) => (
+              <article className="relative rounded-lg shadow-xl bg-white p-16">
+                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-7001">
+                  <a
+                    href={project.link}
+                    alt={project.title}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                <div className="text-gray-500 text-xs space-x-4">
+                  <span>
+                    <strong className="font-bold">Finished on</strong>:{" "}
+                    {new Date(project.date).toLocaleDateString()}
+                  </span>
+                  <span>
+                    <strong className="font-bold">Company</strong>:{" "}
+                    {project.place}
+                  </span>
+                  <span>
+                    <strong className="font-bold">Type</strong>:{" "}
+                    {project.projectType}
+                  </span>
+                </div>
+                <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  {project.description}
+                </p>
+                <a
+                  href={project.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-red-500 font-bold hover:underline hover:text-red-400"
+                >
+                  View The Project{" "}
+                  <span role="img" aria-label="right pointer">
+                    👉
+                  </span>
+                </a>
+              </article>
+            ))}
+        </section>
+      </section>
+    </main>
+  );
+}
+```
+
+
+## Single Post Page
+---
+
+1. We can use the image url package native to Sanity if we want to bring in our images from our blog posts
+2. npm i @sanity/image-url to install the image package
+3. import imageUrlBuilder from "sanity/image-url"
