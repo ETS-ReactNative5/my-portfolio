@@ -1,13 +1,8 @@
 ## My Portfolio Site built in React
 ---
 
-repo info
-```git remote add origin https://github.com/mcooper7649/my-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
 [Walkthrough](https://www.youtube.com/watch?v=NO7_jgzVgbc)
+
 ## Overview
 --
 
@@ -40,7 +35,7 @@ git push -u origin main
 14. inside client
     - import sanityClient from '@sanity'
     - export default sanityClient({
-    projectId: "",
+    projectId: "gjvkk6c4",
     dataset: "production"
 })
 15. to to the sanity.json and copy your api.projectId and put inside your client.js ``gjvkk6c4``
@@ -48,4 +43,37 @@ git push -u origin main
     - go to settings and go under cors orgin add a new origin
     - add http://localhost:3000
 17. we will need to add the host url here when comlete and hosted
-18. 
+18. commit!
+
+## TailWinds Setup
+---
+
+1. Tailwind is a highly customized CSS framework
+    - (tailwindcss)[https://tailwindcss.com]
+2. install tailwind
+    - inside index.css 
+        - delete everything
+    - Tailwind will automatically have default classes specific attributes, but we some some basic customizations. so we will add them and the rest will be default tailwind
+
+ index.css   
+```
+@import url("https://unpkg.com/@tailwindcss@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+.cursive {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.home-name {
+  font-size: 150px;
+}
+```
+
