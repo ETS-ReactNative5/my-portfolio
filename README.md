@@ -188,4 +188,24 @@ export default function About(){
 ## Home page
 --
 
-1. 
+1. First We want to create a images folder inside our src folder
+2. import image from that folder for our image
+3. we will have these tags
+    - Main
+        - just the wrapper, no classes
+    - Img
+        - src {image}
+        - classname
+            - "absolute object-cover w-full h-full" 
+    - Section
+        - className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8 "
+        - h1
+            - ``<h1 className="text-6xl text-green-100 font-bold cursive leading-none lg: leading-snug home-name">Hello. I'm Michael</h1>``
+
+
+
+## Post Page
+--
+
+1. Lets remove the h1 placeholder
+2. Import sanityClient form '../client.js'
