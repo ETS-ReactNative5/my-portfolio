@@ -27,7 +27,7 @@ export default function Project() {
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my projects page!
+          Check Out My Projects Below!
         </h2>
 
         <section className="grid grid-cols-2 gap-8">
@@ -67,8 +67,8 @@ export default function Project() {
                   target="_blank"
                   className="text-red-500 font-bold hover:underline hover:text-red-400"
                 >
-                  View The Project{" "}
-                  <span role="img" aria-label="right pointer">
+                  View The Project
+                  <span role="img" aria-label="up pointer">
                     👆🏻
                   </span>
                 </a>
