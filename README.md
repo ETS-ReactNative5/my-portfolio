@@ -471,3 +471,18 @@ return (
 1. We can use the image url package native to Sanity if we want to bring in our images from our blog posts
 2. npm i @sanity/image-url to install the image package
 3. import imageUrlBuilder from "sanity/image-url"
+
+4. see page single post page
+
+
+# About Me Page
+--- 
+1. See About me Page
+
+
+## Deploying
+--- 
+
+1. Before we can deploy we need to configure our redirects page so netlify will know where to send it to.
+2. /*    /index.html   200 inside _redirect file inside the public folder
+3. 
