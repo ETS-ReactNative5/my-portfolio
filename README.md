@@ -485,4 +485,23 @@ return (
 
 1. Before we can deploy we need to configure our redirects page so netlify will know where to send it to.
 2. /*    /index.html   200 inside _redirect file inside the public folder
-3. 
+
+3. Netlify
+    - login
+        - select github
+        - select your repo
+        - default settings
+        - publish
+            (https://optimistic-colden-9dba13.netlify.app/)[https://optimistic-colden-9dba13.netlify.app/]
+4. Sanity
+    - from terminal inside studio folder!!!
+        - sanity deploy
+            (https://mcooperportfolio.sanity.studio/)[https://mcooperportfolio.sanity.studio/]
+    - lastly go to manage.sanity.io 
+    - settings for this studio
+    - api settings>cors origins
+        - add our NETLIFY url
+        - DONE!!!
+
+5. Now we can make new blog posts from the studio URL
+    - https://mcooperportfolio.sanity.studio
