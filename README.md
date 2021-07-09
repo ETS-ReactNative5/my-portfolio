@@ -137,7 +137,10 @@ export default App;
 
 
 ## Adding Code to new Components
-    - Add boiler plate data to each component
+---
+
+- Add boiler plate data to each component
+
 ```
 import React from 'react'
 
@@ -148,3 +151,39 @@ export default function About(){
 
 1. Once you have copied and changed the boilerplate. save it
     * protip click then hold option to have your cursur in multipleplaces
+
+
+## Navbar
+--
+
+1. Lets Open Navbar.js
+    - import Link from react-router-dom
+
+2. We will need 4 tags inside our navbar
+    - header
+        - add classname="bg-red-600"
+    - div
+        - add className="container mx auto flex justify-between"
+    - nav
+    - NavLink
+        - to '/'
+        - Within our NavLinks
+            - List our pages names
+            - put "to=" the correct route
+        - to '/post'
+        - classNames
+            - inline-flex items-center py-3 px-3 my-6 rounded-text-red-200 hover:text-green-800
+            - activeClassName text-red-100 bg-red-700
+        - copy our '/post' class and active class to project and about navlinks
+
+3. Social Icons
+    - Under our ``</nav>`` tag
+    - npm install react-social-icons from terminal
+    - add a div below the nav tag
+    - paste this code 3 times
+        - ``<SocialIcon url="" className='mr-4 ' target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />``
+    - Add in the URL of your favorite Social media Site
+
+
+## Home page
+--
