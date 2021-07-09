@@ -77,3 +77,74 @@
 }
 ```
 
+
+## Componenets Setup
+---
+
+1. For this project were gonna create the components sub-directory in the src folder
+2. our first components will be
+    - Home
+    - About
+    - NavBar
+    - Post
+    - Project
+    - SinglePost
+
+3. We will need a module to tell the application how to link the pages between each eother
+    - react-router does this for us
+        - npm i react-router-dom
+
+4. in App.js
+    - Remove all the code
+    - import React from react
+    - import BrowserRouter, Route, Switch from react-router-dom
+    - in our App return
+        - BrowserRouter
+        - Switch
+        - Route for each of our pages
+        - path to match page url
+        - component is the component name
+        - make sure the order has the slug page ABOVE the post page
+        - add exact to your Home route
+        - import all your components at the top of the page
+
+```
+import React from 'react';
+import { BrowserRouter, Route, Switch }  from 'react-router-dom';
+import Home from "./components/Home";
+import About from "./components/About";
+import SinglePost from './components/SinglePost';
+import Post from './components/Post'
+import Project from './components/Project'
+
+
+function App(){
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route component={Home} path='/' exact />
+        <Route component={About} path='/about' />
+        <Route component={SinglePost} path='/post/:slug' />
+        <Route component={Post} path='/post' />
+        <Route component={Project} path='/project' />
+      </Switch>
+    </BrowserRouter>
+  )
+}
+
+export default App;
+```
+
+
+## Adding Code to new Components
+    - Add boiler plate data to each component
+```
+import React from 'react'
+
+export default function About(){
+    return <h1>About Page!</h1>
+}
+```
+
+1. Once you have copied and changed the boilerplate. save it
+    * protip click then hold option to have your cursur in multipleplaces
