@@ -205,7 +205,89 @@ export default function About(){
 
 
 ## Post Page
---
+---
 
+POST Function 
+---
 1. Lets remove the h1 placeholder
 2. Import sanityClient form '../client.js'
+3. create function Post
+4. inside body, postData, setPost = useState(null)
+5. useEffect after 
+6. SanityClient Fetch ALL of type post // dont forget backticks!
+7. in the body of our fetch
+    - title
+    - slug
+    - mainImage
+        - asset ->
+            - _id
+            - url
+        - alt
+8. then((data) => setPost(data))
+9. catch and console.error
+10. [] for possible errors
+
+Post Return
+---
+
+1. main tag as our wrapper
+    - className="bg-green-100 min-h-screen p-12"
+2. section tag
+    - classes: container mx-auto
+3. h1 tag
+    - classes: text-5xl flex justify-center cursive
+    - content: Blog Post Page
+4. h2 
+    - className="text-lg text-gray-600 flex justify-center mb-12"
+    - content: welcome to my page
+5. Grid (responsive)
+    - classes: grid md: grid-cols-2 lg: grid-cols-3 gap-8
+
+6. Before our next tag we need to map through our postData && postData map
+    - dont for get to put jsx wrapper around article
+    - passing (post, index)
+    - fat arrow then wrap our article tags with ()
+    - inside our article
+        - Link Tag
+            - to={"/post/" + post.slug.current} key={post.slug.current}
+        - span Tag
+            - className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400" key={index}
+            - img Tag
+                - src={post.mainImage.asset.url} alt={post.mainImage.alt} className="w-full h-full rounded-r object-cover absolute"
+            - span
+                - className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                    - h3 Tag className="text-gray-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">{post.title}
+
+
+
+## Sanity Studio
+---
+
+1. Inside our Sanity fetch type=='post' it is pulling that information from inside our sanity package from the studio>schemas>post.js you can see
+    - name: 'post'
+    - title: 'Post' etc
+2. Lets create our first blog post so we can see if our content will render
+    - got to http://localhost:3333/desk
+        - if its not loading
+            - go to studio directory and type 'sanity start'
+
+3. Once its running we can click on post
+    - and start our first Post
+    - Choose a Title
+    - generate a slug, based off title
+    - author, skip
+        - it has a reference to author schema
+    - upload an image for our blog
+    - in the body 
+        - This is my blog post. Hope you like it! :)
+    - PUBLISH
+    - go to author tab on left panel
+    
+4. Inside our new Author Panel
+    - Name
+        - Michael
+        - generate slug
+        - upload image
+        - bio
+            - Full Stack Developer Looking for an Opportunity to build an amazing company.
+        - publish
