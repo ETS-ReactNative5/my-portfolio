@@ -51,7 +51,7 @@ export default function About() {
             <div className="text-blue-800 cursive">
           <h2>Get In Touch</h2>
           <p className="text-lg flex flex-col justify-center">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
-          <a className="hover:text-red-200" target="_blank" href="mailto:mcooper7649@gmail.com"><i className="text-red-800  fas fa-4x fa-envelope-square"></i></a>
+          <a className="hover:text-red-200" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com"><i className="text-red-800  fas fa-4x fa-envelope-square"></i></a>
         </div>
           </div>
         </section>
