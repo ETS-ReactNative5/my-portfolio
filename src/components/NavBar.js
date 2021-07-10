@@ -7,8 +7,8 @@ import { SocialIcon } from 'react-social-icons'
 export default function NavBar() {
   return (
     <header className="bg-blue-600">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex cutive">
+      <div className="lg:container mx-auto flex justify-between">
+        <nav className="lg:flex cutive">
           <NavLink
             to="/"
             exact
@@ -21,26 +21,26 @@ export default function NavBar() {
           <NavLink
             to="/post"
             activeClassName="text-blue-100 bg-blue-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
+            className="lg:inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="text-blue-100 bg-blue-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
+            className="lg:inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-blue-100 bg-blue-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
+            className="lg:inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
           >
-            About Me!
+            About
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="lg:inline-flex ml-5 py-6 px-4 lg:px-3 lg:my-6">
         <SocialIcon url="https://github.com/mcooper7649" className='mr-4' target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
         <SocialIcon url="https://www.linkedin.com/in/mcooper305/" className='mr-4' target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
         <SocialIcon url="https://medium.com/@koopnutz" className='mr-4' target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />

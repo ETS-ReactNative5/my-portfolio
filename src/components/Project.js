@@ -30,11 +30,11 @@ export default function Project() {
           Check Out My Projects Below!
         </h2>
 
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid lg:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16 cutive">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-7001">
+              <article className="relative rounded-lg shadow-xl bg-white p-6 lg:p-16 cutive">
+                <h3 className="text-gray-800 text-xl lg:text-3xl font-bold mb-2 hover:text-red-7001">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -58,7 +58,7 @@ export default function Project() {
                     {project.projectType}
                   </span>
                 </div>
-                <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                <p className="my-6 text-sm lg:text-lg text-gray-700 leading-relaxed">
                   {project.description}
                 </p>
                 <a

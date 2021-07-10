@@ -5,7 +5,7 @@ export default function Footer () {
     return (
             <div className="bg-blue-600 text-blue-300">
       <div className="project-div">
-      <ul className="flex pt-10 cutive text-sm" id="projects">
+      <ul className="lg:flex pt-10 cutive text-sm" id="projects">
         <li className="text-center">
           <a className="ml-4 hover:text-red-300" target="_blank" rel="noreferrer" href="https://gracious-haibt-d0bc69.netlify.app/"><i className="fas fa-2x fa-dice"></i> Yahtzee</a>
         </li>
