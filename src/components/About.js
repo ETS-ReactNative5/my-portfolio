@@ -31,7 +31,7 @@ export default function About() {
       <img
         src={aboutbg}
         alt="Florida BG background"
-        className="absolute object-cover w-full h-full"
+        className="absolute cover w-full h-full"
       />
       <div className="py-10">
         </div>
