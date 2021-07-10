@@ -8,14 +8,14 @@ export default function NavBar() {
   return (
     <header className="bg-blue-600">
       <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+        <nav className="flex cutive">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
             className="inline-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-red-300  text-4xl font-bold cursive tracking-widest"
           >
-            <i className="fas fa-user-ninja fa-2x px-2"></i> MyCodeDojo
+            <i className="fas fa-user-ninja fa-2x px-2 "></i> MyCodeDojo
           </NavLink>
 
           <NavLink

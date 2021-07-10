@@ -42,16 +42,18 @@ export default function About() {
             className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="text-lg flex flex-col justify-center">
+          <div className="text-lg">
             <h1 className="cursive text-6xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-800">{author.name}</span>
             </h1>
-            <p className="text-red-700 text-lg">{author.bio}</p>
+            <p className="text-red-800 text-2xl cutive">{author.bio}</p>
             <div className="text-blue-800 cursive">
-          <h2>Get In Touch</h2>
-          <p className="text-lg flex flex-col justify-center">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
-          <a className="hover:text-red-200" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com"><i className="text-red-800  fas fa-4x fa-envelope-square"></i></a>
+          <h2 className="text-xl">Get In Touch</h2>
+          <div className="flex">
+          <p className="text-xl">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
+          <a className="bg-red-200 hover:bg-red-300 text-white font-bold pt-2 pb-1 mx-5 px-10 border border-blue-700 rounded" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com"><i className="animate-pulse text-red-800  fas fa-2x fa-envelope-square"></i></a>
+          </div>
         </div>
           </div>
         </section>

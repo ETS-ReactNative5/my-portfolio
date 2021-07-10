@@ -5,7 +5,7 @@ export default function Footer () {
     return (
             <div className="bg-blue-600 text-blue-300">
       <div className="project-div">
-      <ul className="flex pt-10" id="projects">
+      <ul className="flex pt-10 cutive text-sm" id="projects">
         <li className="text-center">
           <a className="ml-4 hover:text-red-300" target="_blank" rel="noreferrer" href="https://gracious-haibt-d0bc69.netlify.app/"><i className="fas fa-2x fa-dice"></i> Yahtzee</a>
         </li>
@@ -46,7 +46,7 @@ export default function Footer () {
       </ul>
     </div>
         <div>
-            <p className="py-10 text-center">Crafted by a <i className="hover:text-red-300 fas fa-user-ninja fa-2x px-2"></i><Link to="/" className="hover:text-blue-300"> © 2021 MyCodeDojo</Link></p>
+            <p className="py-10 text-center text-sm text-white cutive">Crafted by a <i className="hover:text-red-300 fas fa-user-ninja fa-2x px-2 animate-bounce"></i><Link to="/" className="hover:text-blue-300"> © 2021 MyCodeDojo</Link></p>
         </div>
         </div>
     )
