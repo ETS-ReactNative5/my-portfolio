@@ -2,9 +2,6 @@ import React, {Component} from 'react'
 // import image from '../images/palm.jpg'
 
 class Home extends Component{
-    constructor(props){
-        super(props)
-    }
     state = {
         quote: ''
       }
