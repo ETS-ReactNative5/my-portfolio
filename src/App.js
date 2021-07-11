@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch }  from 'react-router-dom';
 import Home from "./components/Home";
 import About from "./components/About";
@@ -12,7 +13,23 @@ import './App.css'
 
 function App(){
   return (
+
+
     <BrowserRouter>
+        <Helmet>
+          <meta charset="utf-8" data-react-helmet="true" />
+          <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+          <meta name="title" content="My Code Dojo" property="og:title"  data-react-helmet="true" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="theme-color"  data-react-helmet="true" />
+          <meta name="image" property="og:image" content="https://i.ibb.co/7xhcJf0/Screen-Shot-2021-07-11-at-12-08-43-PM.png"  data-react-helmet="true" />
+          <meta name="url" property="og:url" content="https://www.mycodedojo.com" />
+          <meta name="description" property="og:description"  content="My Code Dojo | Welcome to Michael Cooper's Code Dojo! A Place Where This Ninja Can Practice His Craft Stealthily And Show Off Past Accomplishments." data-react-helmet="true" />
+          <meta name="author" property="og:author" content="Michael Cooper" />
+          <meta name="publish_date" property="og:publish_date" content="2021-07-11T00:00:00-0600" />
+          <script src="https://kit.fontawesome.com/8cc1b75eb3.js" crossorigin="anonymous"></script>
+          <title>My Code Dojo | by Michael Cooper</title>
+      </Helmet>
     <NavBar />
       <Switch>
         <Route component={Home} path='/' exact />
