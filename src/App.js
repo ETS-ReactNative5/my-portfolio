@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch }  from 'react-router-dom';
 import Home from "./components/Home";
@@ -7,11 +7,13 @@ import SinglePost from './components/SinglePost';
 import Post from './components/Post'
 import Project from './components/Project'
 import NavBar from './components/NavBar';
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import './App.css'
+import FooterPage from './components/FooterPage';
 
+class App extends Component{
 
-function App(){
+  render(){
   return (
 
 
@@ -38,9 +40,10 @@ function App(){
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
       </Switch>
-      <Footer />
+      <FooterPage/>
     </BrowserRouter>
   )
+}
 }
 
 export default App;
