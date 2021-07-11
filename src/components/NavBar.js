@@ -7,8 +7,8 @@ import { SocialIcon } from 'react-social-icons'
 export default function NavBar() {
   return (
     <header className="bg-blue-600 pb-10">
-      <div className="container mx-auto flex justify-between">
-        <nav className="lg:flex cutive">
+      <div className="container mx-auto flex justify-center">
+        <nav className="lg:flex content-center cutive">
           <NavLink
             to="/"
             exact

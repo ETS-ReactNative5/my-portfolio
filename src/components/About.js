@@ -33,7 +33,7 @@ export default function About() {
         alt="Florida BG background"
         className="absolute cover w-full h-full"
       />
-      <div className="py-10">
+      <div className="py-6">
         </div>
       <div className="lg:pt-48 mx-auto relative">
         <section className="bg-red-200 bg-opacity-50 rounded-lg shadow-2xl lg:flex p-20">
@@ -52,7 +52,7 @@ export default function About() {
           <h2 className="text-xl">Get In Touch</h2>
           <div className="lg:flex">
           <p className="text-xl pb-5">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
-          <a className="bg-red-200 hover:bg-red-300 text-white font-bold lg:ml-4 ml-20 pt-6 pb-2 pl-8 px-8 lg:py-2 lg:px-10 border border-blue-700 rounded" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com"><i className="animate-pulse text-red-800  fas fa-2x fa-envelope-square"></i></a>
+          <a className="bg-red-200 hover:bg-red-300 text-white font-bold lg:ml-4 ml-20 pt-6 pb-2 px-8 lg:py-2 lg:px-10 border border-blue-700 rounded" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com"><i className="animate-pulse text-red-800  fas fa-2x fa-envelope-square"></i></a>
           </div>
         </div>
           </div>
