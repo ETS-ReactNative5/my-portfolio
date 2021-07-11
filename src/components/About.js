@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
-import aboutbg from "../images/aboutbg.jpeg";
+import Background from "../images/aboutbg.jpeg";
 import imageUrlBuilder from "@sanity/image-url";
 import {Button} from '@material-ui/core'
 
@@ -39,12 +39,7 @@ export default function About() {
   )
 
   return (
-    <main className="relative">
-      <img
-        src={aboutbg}
-        alt="Florida BG background"
-        className="absolute cover w-full h-full"
-      />
+    <main style={{backgroundImage: "url(" + Background + ")"}} className="bg-cover relative">
       <div className="py-6">
         </div>
       <div className="lg:pt-48 mx-auto relative">
@@ -54,7 +49,7 @@ export default function About() {
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="text-lg bg-red-200 bg-opacity-75 p-3">
+          <div className="rounded text-lg bg-red-200 bg-opacity-75 p-3">
             <h1 className="cursive text-2xl lg:text-5xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-700">{author.name}</span>
