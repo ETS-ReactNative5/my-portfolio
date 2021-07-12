@@ -41,14 +41,14 @@ export default function About() {
   return (
     <main style={{backgroundImage: "url(" + Background + ")"}} className="bg-cover relative">
       <div className="lg:pt-48 p-3 lg:px-20 px-3 mx-auto relative">
-        <section className="bg-red-200 bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20 pt-6 px-3">
+        <section className="bg-red-200 bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20 py-6 px-3">
           <img
             src={urlFor(author.authorImage).url()}
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="rounded text-lg bg-red-200 bg-opacity-75">
-            <h1 className="text-center cursive text-2xl lg:text-5xl text-blue-700 mb-4">
+          <div className="rounded text-lg bg-red-200 bg-opacity-75 mt-3">
+            <h1 className="p-2 text-center cursive text-2xl lg:text-5xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-700">{author.name}</span>
             </h1>
