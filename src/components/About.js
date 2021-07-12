@@ -48,13 +48,13 @@ export default function About() {
             alt="Michael"
           />
           <div className="rounded text-lg bg-red-200 bg-opacity-75 mt-3">
-            <h1 className="p-2 text-center cursive text-2xl lg:text-5xl text-blue-700 mb-4">
+            <h1 className="p-2 text-center cursive text-3xl lg:text-5xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-700">{author.name}</span>
             </h1>
             <p className="text-center text-red-700 lg:text-2xl cutive">{author.bio}</p>
             <div className="text-blue-700 cursive">
-          <h2 className="text-center text-red-700 text-xl py-3">Get In Touch</h2>
+          <h2 className="text-center text-red-700 text-3xl py-3">Get In Touch</h2>
           <div className="lg:flex p-3 text-center">
           <p className="text-xl pb-5 pr-5">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
           <Button className="" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com" variant="contained" color="secondary">
