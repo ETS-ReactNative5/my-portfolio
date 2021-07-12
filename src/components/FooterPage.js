@@ -58,7 +58,7 @@ render(){
   	 		<div className="footer-col">
   	 			<h4>Subscribe</h4>
   	 			<div className="">
-                    <a className="text-red-500 hover:text-red-300" target="_blank" rel="noreferrer" href="https://aqueous-ocean-42020.herokuapp.com/"><i className="fa fa-2x fa-bullhorn"></i> My Newsletter</a>
+                    <a className="text-red-500 hover:text-red-300" target="_blank" rel="noreferrer" href="https://aqueous-ocean-42020.herokuapp.com/"><i className="animate-bounce fa fa-2x fa-bullhorn"></i> My Newsletter</a>
   	 			</div>
   	 		</div>
   	 	</div>

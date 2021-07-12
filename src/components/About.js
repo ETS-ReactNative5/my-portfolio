@@ -40,27 +40,25 @@ export default function About() {
 
   return (
     <main style={{backgroundImage: "url(" + Background + ")"}} className="bg-cover relative">
-      <div className="py-6">
-        </div>
-      <div className="lg:pt-48 mx-auto relative">
-        <section className="bg-red-200 bg-opacity-50 rounded-lg shadow-2xl lg:flex p-20">
+      <div className="lg:pt-48 p-3 lg:px-20 px-3 mx-auto relative">
+        <section className="bg-red-200 bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20 pt-6 px-3">
           <img
             src={urlFor(author.authorImage).url()}
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="rounded text-lg bg-red-200 bg-opacity-75 p-3">
+          <div className="rounded text-lg bg-red-200 bg-opacity-75">
             <h1 className="text-center cursive text-2xl lg:text-5xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-700">{author.name}</span>
             </h1>
-            <p className="text-red-700 lg:text-2xl cutive">{author.bio}</p>
+            <p className="text-center text-red-700 lg:text-2xl cutive">{author.bio}</p>
             <div className="text-blue-700 cursive">
           <h2 className="text-center text-red-700 text-xl py-3">Get In Touch</h2>
-          <div className="lg:flex">
+          <div className="lg:flex p-3 text-center">
           <p className="text-xl pb-5 pr-5">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
           <Button className="" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com" variant="contained" color="secondary">
-          <i className="px-20 animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
+          <i className="m-3 px-20 animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
           </Button>
           </div>
         </div>
