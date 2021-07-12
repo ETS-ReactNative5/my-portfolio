@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <header className="bg-blue-600 lg:pb-10">
       <div className="container mx-auto flex">
-        <nav className="lg:flex content-center cutive">
+        <nav className="lg:flex text-center mx-auto content-center space-between cutive">
           <NavLink
             to="/"
             exact

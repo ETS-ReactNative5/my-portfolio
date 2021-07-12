@@ -50,17 +50,17 @@ export default function About() {
             alt="Michael"
           />
           <div className="rounded text-lg bg-red-200 bg-opacity-75 p-3">
-            <h1 className="cursive text-2xl lg:text-5xl text-blue-700 mb-4">
+            <h1 className="text-center cursive text-2xl lg:text-5xl text-blue-700 mb-4">
               Hey there. I'm{" "}
               <span className="text-red-700">{author.name}</span>
             </h1>
             <p className="text-red-700 lg:text-2xl cutive">{author.bio}</p>
             <div className="text-blue-700 cursive">
-          <h2 className="text-red-700 text-xl py-3">Get In Touch</h2>
+          <h2 className="text-center text-red-700 text-xl py-3">Get In Touch</h2>
           <div className="lg:flex">
           <p className="text-xl pb-5 pr-5">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
-          <Button target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com" variant="contained" color="secondary">
-          <i className="px-8 animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
+          <Button className="" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com" variant="contained" color="secondary">
+          <i className="px-20 animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
           </Button>
           </div>
         </div>
