@@ -25,7 +25,7 @@ export default function Project() {
   return (
     <main className="bg-green-100 min-h-screen lg:p-12">
       <section className="p-3 container mx-auto bg-blue-200">
-        <h1 className="text-3xl text-red-600 lg:text-5xl flex justify-center cursive bg-green-100">My Projects</h1>
+        <h1 className="text-3xl text-red-600 lg:text-5xl flex justify-center cutive bg-green-100">My Projects</h1>
         <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
           Check Out My Projects Below!
         </h2>
@@ -33,8 +33,8 @@ export default function Project() {
         <section className="grid lg:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16 cutive">
-                <h3 className="text-gray-800 text-xl lg:text-3xl font-bold mb-2 hover:text-red-7001">
+              <article className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16">
+                <h3 className="text-blue-600 text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
                     alt={project.title}
