@@ -7,7 +7,6 @@ import SinglePost from './components/SinglePost';
 import Post from './components/Post'
 import Project from './components/Project'
 import NavBar from './components/NavBar';
-// import Footer from './components/Footer'
 import './App.css'
 import FooterPage from './components/FooterPage';
 
