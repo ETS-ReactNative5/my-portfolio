@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <header className="bg-blue-600 lg:pb-10">
       <div className="container mx-auto flex">
-        <nav className="lg:flex text-center mx-auto content-center space-between cutive">
+        <nav className="lg:flex text-center mx-auto content-center cutive space-x-5 lg:space-x-3">
           <NavLink
             to="/"
             exact
@@ -37,7 +37,7 @@ export default function NavBar() {
             activeClassName="text-blue-100 bg-blue-700"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-300 "
           >
-            About
+            About         
           </NavLink>
         </nav>
       </div>
