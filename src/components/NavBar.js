@@ -42,7 +42,7 @@ export default function NavBar() {
     //     </nav>
     //   </div>
     // </header>
-  <div className="w-screen flex flex-row items-center p-1 justify-between bg-white shadow-xs">
+  <div className="w-screen-0 flex flex-row items-center p-1 justify-between bg-white shadow-xs">
     <div className="ml-8 text-lg text-gray-700 hidden md:flex">
           <NavLink
                   to="/"
@@ -52,7 +52,7 @@ export default function NavBar() {
                 >
                   <i className="fas fa-user-ninja fa-2x px-2 "></i> MyCodeDojo
           </NavLink></div>
-    <span className="w-screen md:w-1/3 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
+    <span className="w-screen-0 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
       <input type="search" name="serch" placeholder="Search"
         className="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none" />
       <i className="fas fa-search m-3 mr-5 text-lg text-gray-700 w-4 h-4">
@@ -62,7 +62,7 @@ export default function NavBar() {
       <i className="fas fa-bars"></i>
     </div>
       <div className="flex flex-row mr-8 hidden md:flex">
-        <div className="rounded text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+        <div className="rounded text-gray-700 text-center bg-gray-400 px-4 py-2">
         <NavLink
             to="/post"
             activeClassName="text-blue-100 bg-blue-700"
