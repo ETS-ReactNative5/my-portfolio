@@ -21,9 +21,9 @@ export default function Post(){
     }, []);
 
     return (
-        <main className="min-h-screen lg:p-12 p-4">
+        <main className="min-h-screen lg:p-12 p-4 bg-blue-200">
             <section className="container mx-auto" >
-                <h1 className="bg-blue-200 text-red-600 text-3xl lg:text-5xl flex justify-center cutive">Code Dojo Blog</h1>
+                <h1 className="bg-gray-900 text-red-600 text-3xl lg:text-5xl flex justify-center cutive">Code Dojo Blog</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to the Code Dojo Blog</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     { postData && postData.map((post, index) => (
