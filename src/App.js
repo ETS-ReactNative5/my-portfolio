@@ -6,7 +6,8 @@ import About from "./components/About";
 import SinglePost from './components/SinglePost';
 import Post from './components/Post'
 import Project from './components/Project'
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
+import NewNav from './components/NewNav'
 import './App.css'
 import FooterPage from './components/FooterPage';
 
@@ -31,7 +32,7 @@ class App extends Component{
           <script src="https://kit.fontawesome.com/8cc1b75eb3.js" crossorigin="anonymous"></script>
           <title>My Code Dojo | by Michael Cooper</title>
       </Helmet>
-    <NavBar />
+    <NewNav />
       <Switch>
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />
