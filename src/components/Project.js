@@ -25,10 +25,10 @@ export default function Project() {
   return (
     <main className="bg-blue-200 min-h-screen lg:p-12 ">
       <section className="p-3 container mx-auto bg-gray-900">
-        <h1 className="text-3xl text-red-600 lg:text-5xl flex justify-center cutive bg-green-100">My Projects</h1>
-        <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
+        <h1 className="my-6 rounded text-3xl text-red-600 lg:text-5xl flex justify-center cutive bg-green-100">My Projects</h1>
+        {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
           Check Out My Projects Below!
-        </h2>
+        </h2> */}
 
         <section className="grid lg:grid-cols-2 gap-8">
           {projectData &&
