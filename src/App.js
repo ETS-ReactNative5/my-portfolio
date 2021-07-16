@@ -30,6 +30,14 @@ class App extends Component{
           <meta name="author" property="og:author" content="Michael Cooper" />
           <meta name="publish_date" property="og:publish_date" content="2021-07-11T00:00:00-0600" />
           <script src="https://kit.fontawesome.com/8cc1b75eb3.js" crossorigin="anonymous"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDQHZ899CD"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+
+            gtag('config', 'G-NDQHZ899CD');
+          </script>
           <title>My Code Dojo | by Michael Cooper</title>
       </Helmet>
     <NewNav />
