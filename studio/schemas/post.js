@@ -9,6 +9,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'subtitle',
+      title: 'Sub-Title',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -46,6 +51,7 @@ export default {
   preview: {
     select: {
       title: 'title',
+      subtitle: 'subtitle',
       author: 'author.name',
       media: 'mainImage',
     },
