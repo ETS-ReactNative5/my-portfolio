@@ -56,8 +56,8 @@ export default function About() {
             <div className="text-white">
           {/* <h2 className="text-center text-red-700 text-2xl py-3">Get In Touch</h2> */}
           <div className="lg:flex p-3 text-center">
-          <p className="text-xl pb-5 pr-5">Wanna talk about code? New Opportunities? Anything? Reach out about anything below.</p>
-          <Button className="" target="_blank" rel="noreferrer" href="mailto:mcooper7649@gmail.com" variant="contained" color="secondary">
+          <p className="text-xl pb-5 pr-5">Wanna talk about code? New Opportunities? Anything? Feel free to reach out.</p>
+          <Button className="" target="_blank" rel="noreferrer" href={process.env.REACT_APP_MAILCHIMP_API_URL} variant="contained" color="secondary">
           <i className="m-3 px-20 animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
           </Button>
           </div>
