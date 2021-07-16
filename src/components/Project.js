@@ -15,7 +15,14 @@ export default function Project() {
         description,
         projectType,
         link,
-        tags
+        tags,
+        mainImage{
+          asset->{
+              _id,
+              url
+          },
+          alt
+      }
       }`
       )
       .then((data) => setProjectData(data))
@@ -33,7 +40,10 @@ export default function Project() {
         <section className="grid lg:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16">
+              <article key={index} className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16">
+
+                 <img src={project.mainImage.asset.url} alt={project.mainImage.alt}/> 
+         
                 <h3 className="text-blue-600 text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
