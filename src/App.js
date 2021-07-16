@@ -10,14 +10,6 @@ import Project from './components/Project'
 import NewNav from './components/NewNav'
 import './App.css'
 import FooterPage from './components/FooterPage';
-import TagManager from 'react-gtm-module'
-
-const tagManagerArgs = {
-    gtmId: 'G-NDQHZ899CD'
-}
-
-TagManager.initialize(tagManagerArgs)
-
 
 class App extends Component{
 
