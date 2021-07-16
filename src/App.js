@@ -14,6 +14,9 @@ import FooterPage from './components/FooterPage';
 class App extends Component{
 
   render(){
+    window.dataLayer.push({
+      event: 'pageview'
+    });
   return (
 
 
