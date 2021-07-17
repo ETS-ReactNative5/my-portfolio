@@ -15,7 +15,13 @@ export default function Navbar({ fixed }) {
                   activeClassName="text-white"
                   className="inline-flex items-center py-6 text-red-500 hover:text-red-800  text-4xl font-bold cursive tracking-widest"
                 >
-                  <i className="fas fa-user-ninja fa-2x px-2 "></i> MyCodeDojo
+                  <i className="fas fa-user-ninja fa-2x px-2 "></i> 
+                  <span className="text-4xl md:text-5xl text-red-100">M</span>
+                  <span className="text-4xl md:text-5xl">y</span>
+                  <span className="text-4xl md:text-5xl text-red-100">C</span>
+                  <span className="text-4xl md:text-5xl">ode</span>
+                  <span className="text-4xl md:text-5xl text-red-100">D</span>
+                  <span className="text-4xl md:text-5xl">ojo</span>
           </NavLink>
             <button
               className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

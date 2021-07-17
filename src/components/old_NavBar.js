@@ -50,7 +50,13 @@ export default function NavBar() {
                   activeClassName="text-white"
                   className="inline-flex items-center py-6 px-10 mr-4 text-red-500 hover:text-red-800  text-4xl font-bold cursive tracking-widest"
                 >
-                  <i className="fas fa-user-ninja fa-2x px-2 "></i> MyCodeDojo
+                  <i className="fas fa-user-ninja fa-2x px-2"></i> 
+                  <span className="text-red-100">M</span>
+                  y
+                  <span className="text-red-100">C</span>
+                  ode
+                  <span className="text-red-100">D</span>
+                  ojo
           </NavLink></div>
     <span className="w-screen-0 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
       <input type="search" name="search" placeholder="Search"
