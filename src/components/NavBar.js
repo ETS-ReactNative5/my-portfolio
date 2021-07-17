@@ -53,7 +53,7 @@ export default function NavBar() {
                   <i className="fas fa-user-ninja fa-2x px-2 "></i> MyCodeDojo
           </NavLink></div>
     <span className="w-screen-0 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
-      <input type="search" name="serch" placeholder="Search"
+      <input type="search" name="search" placeholder="Search"
         className="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none" />
       <i className="fas fa-search m-3 mr-5 text-lg text-gray-700 w-4 h-4">
       </i>

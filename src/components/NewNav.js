@@ -8,7 +8,7 @@ export default function Navbar({ fixed }) {
     <>
       <nav className="relative flex flex-wrap items-center justify-between p-3 bg-gray-900">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
+          <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
           <NavLink
                   to="/"
                   exact
