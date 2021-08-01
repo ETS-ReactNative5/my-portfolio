@@ -63,14 +63,6 @@ export default function Navbar({ fixed }) {
                   <i className="fas fa-user-circle text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About</span>
                 </NavLink>
               </li>
-              <li className="nav-item">
-              <span className="w-screen-0 md:w-1/3 h-10 bg-gray-200 cursor-pointer border-gray-300 text-sm rounded-full flex">
-                <input type="search" name="serch" placeholder="Search"
-                    className="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none" />
-                <i className="fas fa-search m-3 mr-5 text-lg text-gray-700 w-4 h-4">
-                </i>
-                </span>
-              </li>
             </ul>
           </div>
         </div>

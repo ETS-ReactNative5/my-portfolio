@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import sanityClient from '../client.js';
 
 export default function Post(){
-    const [postData, setPost] = useState(null);
+    const [postData, setPost] = useState([]);
+    const [searchField, setSearchField] = useState('');
     useEffect(() => {
         sanityClient.fetch(`*[_type == 'post']{
             title,
@@ -21,13 +22,27 @@ export default function Post(){
         .catch(console.error);
     }, []);
 
+    const handleChange = (event) => {
+        setSearchField(event.target.value);
+      }
+
+      const filteredProjects = 
+      postData.filter(project => project.title.toLowerCase().includes(searchField.toLowerCase()))
+    
+
     return (
         <main className="min-h-screen lg:p-12 p-4 bg-blue-200">
-            <section className="container mx-auto" >
+            <section className="p-3 container mx-auto bg-gray-700" >
+            <input 
+            className="p-1 w-full"
+            type="search"
+            placeholder="Search by keyword..."
+            onChange={handleChange}
+        />
                 <h1 className="my-6 rounded bg-gray-900 text-red-600 text-3xl lg:text-5xl flex justify-center cutive">Code Dojo Blog</h1>
                 {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    { postData && postData.map((post, index) => (
+                    { filteredProjects && filteredProjects.map((post, index) => (
 
                     
                         <article>

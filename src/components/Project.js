@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 
 export default function Project() {
-  const [projectData, setProjectData] = useState(null);
+  const [projectData, setProjectData] = useState([]);
+  const [searchField, setSearchField] = useState('');
+
 
   useEffect(() => {
     sanityClient
@@ -28,18 +30,32 @@ export default function Project() {
       .then((data) => setProjectData(data))
       .catch(console.error);
   }, []);
+  
+  const handleChange = (event) => {
+    setSearchField(event.target.value);
+  }
+
+  const filteredProjects = 
+  projectData.filter(project => project.title.toLowerCase().includes(searchField.toLowerCase()))
 
   return (
+
+    
     <main className="bg-blue-200 min-h-screen lg:p-12 ">
       <section className="p-3 container mx-auto bg-gray-900">
+      <input 
+            className="p-1 w-full"
+            type="search"
+            placeholder="Search by keyword"
+            onChange={handleChange}
+        />
         <h1 className="my-6 rounded text-3xl text-red-600 lg:text-5xl flex justify-center cutive bg-green-100">My Projects</h1>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
           Check Out My Projects Below!
         </h2> */}
-
         <section className="grid lg:grid-cols-2 gap-8">
-          {projectData &&
-            projectData.map((project, index) => (
+          {
+            filteredProjects && filteredProjects.map((project, index) => (
               <article key={index} className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16">
 
                  <img src={project.mainImage.asset.url} alt={project.mainImage.alt}/> 
@@ -83,7 +99,7 @@ export default function Project() {
                   </span>
                 </a>
               </article>
-            ))}
+          ))}
         </section>
       </section>
     </main>
