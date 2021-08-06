@@ -34,6 +34,9 @@ render(){
   	 			<h4>More Projects</h4>
   	 			<ul>
                    <li className="">
+                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://wonderful-joliot-530457.netlify.app/"><i className="fas fa-2x fa-palette"></i>Handy Palette</a>
+                    </li>
+                   <li className="">
                         <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://zen-bhaskara-0d6cd4.netlify.app/"><i className="fas fa-2x fa-skull-crossbones"></i> HangMan</a>
                     </li>
                     <li className="">
@@ -43,7 +46,10 @@ render(){
                         <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://tender-shannon-6091f8.netlify.app/"><i className="fa fa-2x fa-gamepad"></i> Simon Clone</a>
                     </li>
                     <li className="">
-                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://cranky-snyder-38237a.netlify.app/"><i className="fa fa-2x fa-gem"></i>Number Gen</a>
+                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://cranky-snyder-38237a.netlify.app/"><i className="fa fa-2x fa-gem"></i> Number Gen</a>
+                    </li>
+                    <li className="">
+                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://mcooper7649.github.io/angularjs_code_challenge/bootstrap_template/index.html"><i className="fas fa-2x fa-euro-sign">Currency Creator</i></a>
                     </li>
   	 			</ul>
   	 		</div>  
