@@ -56,6 +56,18 @@
   drift.SNIPPET_VERSION = '0.3.1';
   drift.load('9rsb4kszx7th');
   </script>
+  <script>
+
+    function popOneTimeAlert() {
+    console.log("loading Widget")
+    window.removeEventListener('scroll', popOneTimeAlert);
+    LoadDriftWidget()
+     
+    
+    }
+    window.addEventListener("scroll", popOneTimeAlert)
+    
+    </script>
   <!-- End of Async Drift Code -->
   </head>
   <body>
