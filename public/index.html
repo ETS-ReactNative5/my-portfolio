@@ -107,6 +107,20 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="//app-ab10.marketo.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_1057"></form>
+<script>
+MktoForms2.loadForm("//app-ab10.marketo.com", "844-RKG-112", 1057, function (form) {
+form.onSuccess(function (values, followupUrl) {
+drift.api.collectFormData(values, {
+campaignId: 2489177, // update me with the playbook's campaign id!
+followupUrl: followupUrl
+});
+return false;
+});
+});
+</script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

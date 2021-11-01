@@ -63,6 +63,7 @@ export default function About() {
           </div>
         </div>
           </div>
+          
         </section>
         <div className="py-10 lg:py-40">
         </div>
