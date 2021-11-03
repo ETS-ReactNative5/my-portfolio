@@ -57,8 +57,41 @@
   }();
   drift.SNIPPET_VERSION = '0.3.1';
   drift.load('9rsb4kszx7th');
+
+  var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer g9POk88iqLKgyeGIf4qJp8chOROjd70s");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Access-Control-Allow-Headers", "*");
+
+var raw = JSON.stringify({
+"type": "chat",
+"body": "why did the chicken cross the road?"
+});
+
+var requestOptions = {
+method: 'POST',
+mode: 'no-cors',
+headers: myHeaders,
+body: raw,
+redirect: 'follow'
+};
+
+
+window.drift.on("conversation:buttonClicked", function (event) {
+console.log("conversation:buttonClicked", event);
+if(event.buttonBody == "Sure"){
+drift.goToConversation(event.conversationId)
+console.log(event.conversationId)
+fetch(`https://driftapi.com/conversations/${event.conversationId}/messages`, requestOptions)
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.log('error', error));
+}
+});
+
   </script>
   <!-- End of Async Drift Code -->
+  
     
     
   </head>
