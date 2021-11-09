@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NFLRGBM");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" data-react-helmet="true" />
     <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color"  data-react-helmet="true" />
-    <meta name="image" property="og:image" content="https://i.ibb.co/7xhcJf0/Screen-Shot-2021-07-11-at-12-08-43-PM.png"  data-react-helmet="true" />
-    <meta name="url" property="og:url" content="https:www.mycodedojo.com"  data-react-helmet="true"/>
-    <meta name="description" property="og:description"  content="My Code Dojo | Welcome to Michael Cooper's Code Dojo! A Place Where This Ninja Can Practice His Craft Stealthily And Show Off Past Accomplishments." data-react-helmet="true" />
-    <meta name="author" property="og:author" content="Michael Cooper"  data-react-helmet="true"/>
-    <meta name="publish_date" property="og:publish_date" content="2021-07-11T00:00:00-0600" />
-    <meta name="title" content="My Code Dojo" property="og:title"  data-react-helmet="true" />
-    <script src="https://kit.fontawesome.com/8cc1b75eb3.js" crossorigin="anonymous"></script>
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d89871484af8d88a9150cb69c/92f28f9573e9c59e460f97b0a.js");</script>
+    <meta name="theme-color" data-react-helmet="true" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://i.ibb.co/7xhcJf0/Screen-Shot-2021-07-11-at-12-08-43-PM.png"
+      data-react-helmet="true"
+    />
+    <meta
+      name="url"
+      property="og:url"
+      content="https:www.mycodedojo.com"
+      data-react-helmet="true"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="My Code Dojo | Welcome to Michael Cooper's Code Dojo! A Place Where This Ninja Can Practice His Craft Stealthily And Show Off Past Accomplishments."
+      data-react-helmet="true"
+    />
+    <meta
+      name="author"
+      property="og:author"
+      content="Michael Cooper"
+      data-react-helmet="true"
+    />
+    <meta
+      name="publish_date"
+      property="og:publish_date"
+      content="2021-07-11T00:00:00-0600"
+    />
+    <meta
+      name="title"
+      content="My Code Dojo"
+      property="og:title"
+      data-react-helmet="true"
+    />
+    <script
+      src="https://kit.fontawesome.com/8cc1b75eb3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/d89871484af8d88a9150cb69c/92f28f9573e9c59e460f97b0a.js"
+      );
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -32,69 +91,106 @@
     <!-- Start of Async Drift Code -->
 
     <!-- Start of Async Drift Code -->
-<script>
-  "use strict";
-  
-  !function() {
-    var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n = Array.prototype.slice.call(arguments);
-          return n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("9rsb4kszx7th");
+
+      var myHeaders = new Headers();
+      myHeaders.append(
+        "Authorization",
+        "Bearer g9POk88iqLKgyeGIf4qJp8chOROjd70s"
+      );
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Access-Control-Allow-Headers", "*");
+
+      var raw = JSON.stringify({
+        type: "chat",
+        body: "why did the chicken cross the road?",
+      });
+
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
       };
-    }
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('9rsb4kszx7th');
 
-  var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer g9POk88iqLKgyeGIf4qJp8chOROjd70s");
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Access-Control-Allow-Headers", "*");
-
-var raw = JSON.stringify({
-"type": "chat",
-"body": "why did the chicken cross the road?"
-});
-
-var requestOptions = {
-method: 'POST',
-headers: myHeaders,
-body: raw,
-redirect: 'follow'
-};
-
-
-window.drift.on("conversation:buttonClicked", function (event) {
-console.log("conversation:buttonClicked", event);
-if(event.buttonBody == "Sure"){
-drift.goToConversation(event.conversationId)
-console.log(event.conversationId)
-fetch(`https://driftapi.com/conversations/${event.conversationId}/messages`, requestOptions)
-.then(response => response.text())
-.then(result => console.log(result))
-.catch(error => console.log('error', error));
-}
-});
-
-  </script>
-  <!-- End of Async Drift Code -->
-  
-    
-    
+      window.drift.on("conversation:buttonClicked", function (event) {
+        console.log("conversation:buttonClicked", event);
+        if (event.buttonBody == "Sure") {
+          drift.goToConversation(event.conversationId);
+          console.log(event.conversationId);
+          fetch(
+            `https://driftapi.com/conversations/${event.conversationId}/messages`,
+            requestOptions
+          )
+            .then((response) => response.text())
+            .then((result) => console.log(result))
+            .catch((error) => console.log("error", error));
+        }
+      });
+    </script>
+    <!-- End of Async Drift Code -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NFLRGBM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
