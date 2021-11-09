@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
-    <script>
+    <!-- <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -13,7 +13,7 @@
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-NFLRGBM");
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8" data-react-helmet="true" />
@@ -89,11 +89,36 @@
     <title>My Code Dojo | by Michael Cooper</title>
 
     <!-- Start of Async Drift Code -->
-
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('9rsb4kszx7th');
+  </script>
+  <!-- End of Async Drift Code -->
     <!-- Start of Async Drift Code -->
     <script>
-
-
       var myHeaders = new Headers();
       myHeaders.append(
         "Authorization",
@@ -133,7 +158,7 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
+    <!-- <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-NFLRGBM"
         height="0"
@@ -141,8 +166,8 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    End Google Tag Manager (noscript)
+    <noscript>You need to enable JavaScript to run this app.</noscript> -->
     <div id="root"></div>
 
     <!--
