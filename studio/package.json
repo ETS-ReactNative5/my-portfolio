@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.12.2",
-    "@sanity/code-input": "^2.13.0",
+    "@sanity/cli": "^2.12.2",
+    "@sanity/code-input": "^2.21.10",
     "@sanity/components": "^2.2.6",
     "@sanity/core": "^2.12.2",
     "@sanity/default-layout": "^2.12.2",
@@ -24,7 +25,8 @@
     "@sanity/vision": "^2.11.2",
     "prop-types": "^15.7",
     "react": "^17.0",
-    "react-dom": "^17.0"
+    "react-dom": "^17.0",
+    "sanity": "^2.20.0"
   },
   "devDependencies": {},
   "repository": {

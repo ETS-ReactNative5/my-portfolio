@@ -27,7 +27,9 @@ export default function Post(){
       }
 
       const filteredProjects = 
-      postData.filter(project => project.title.toLowerCase().includes(searchField.toLowerCase()))
+      postData.sort().filter(project => project.title.toLowerCase().includes(searchField.toLowerCase()))
+
+      
     
 
     return (
