@@ -14,6 +14,9 @@ render(){
   	 			<h4>Projects</h4>
   	 			<ul>
                    <li className="">
+                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://dreamy-knuth-237df8.netlify.app/"><i className="fas fa-2x fa-calendar-check"></i> NextEvent</a>
+                    </li>
+                   <li className="">
                         <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://distracted-ardinghelli-143d8e.netlify.app/"><i className="fas fa-2x fa-dice"></i> Yahtzee</a>
                     </li>
                     <li className="">
