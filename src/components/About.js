@@ -17,6 +17,8 @@ export default function About() {
       setUrl(window.location.pathname);
       if (typeof window.drift?.page !== undefined && url.length !== 0) {
         window.drift.page(url);
+        window.drift.openChat();
+        window.drift.hideChat();
       }
     }
 
