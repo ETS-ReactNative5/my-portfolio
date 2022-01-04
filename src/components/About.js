@@ -30,7 +30,7 @@ export default function About() {
       )
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
-  }, []);
+  }, [url]);
 
   if (!author)
     return (
