@@ -11,17 +11,7 @@ function urlFor(source) {
 
 export default function About() {
   const [author, setAuthor] = useState(null);
-  const [url, setUrl] = useState('');
   useEffect(() => {
-    if (typeof window !== undefined) {
-      setUrl(window.location.pathname);
-      if (typeof window.drift?.page !== undefined && url.length !== 0) {
-        window.drift.page(url);
-        window.drift.openChat();
-        window.drift.hideChat();
-      }
-    }
-
     sanityClient
       .fetch(
         `*[_type == "author"]{
@@ -32,7 +22,7 @@ export default function About() {
       )
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
-  }, [url]);
+  }, []);
 
   if (!author)
     return (
