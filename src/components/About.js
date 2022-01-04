@@ -11,7 +11,15 @@ function urlFor(source) {
 
 export default function About() {
   const [author, setAuthor] = useState(null);
+  const [url, setUrl] = useState('');
   useEffect(() => {
+    if (typeof window !== undefined) {
+      setUrl(window.location.pathname);
+      if (typeof window.drift?.page !== undefined && url.length !== 0) {
+        window.drift.page(url);
+      }
+    }
+
     sanityClient
       .fetch(
         `*[_type == "author"]{
