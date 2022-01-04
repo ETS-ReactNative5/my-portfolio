@@ -11,7 +11,6 @@ function urlFor(source) {
 
 export default function About() {
   const [author, setAuthor] = useState(null);
-
   useEffect(() => {
     sanityClient
       .fetch(
@@ -28,7 +27,6 @@ export default function About() {
   if (!author)
     return (
       <div class="min-h-screen flex justify-center items-center bg-black">
-        <script>drift.page()</script>
         <button
           type="button"
           className="m-3 inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150 cursor-not-allowed"
