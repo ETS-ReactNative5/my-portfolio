@@ -13,11 +13,11 @@ class FooterPage extends Component {
                 <h4>Projects</h4>
                 <ul>
                   {/* <li className="">
-                        <a className="hover:text-red-300" target="_blank" rel="noreferrer" href="https://dreamy-knuth-237df8.netlify.app/"><i className="fas fa-2x fa-calendar-check"></i> NextEvent</a>
+                        <a className="hover:text-blue-300" target="_blank" rel="noreferrer" href="https://dreamy-knuth-237df8.netlify.app/"><i className="fas fa-2x fa-calendar-check"></i> NextEvent</a>
                     </li> */}
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://distracted-ardinghelli-143d8e.netlify.app/"
@@ -27,7 +27,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://gracious-haibt-d0bc69.netlify.app/"
@@ -38,7 +38,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
@@ -48,7 +48,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://sad-lovelace-f153f1.netlify.app/"
@@ -58,7 +58,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://thirsty-goodall-d53ffc.netlify.app/"
@@ -68,7 +68,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://mcooper7649.github.io/angularjs_code_challenge/bootstrap_template/index.html"
@@ -84,7 +84,7 @@ class FooterPage extends Component {
                 <ul>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://wonderful-joliot-530457.netlify.app/"
@@ -94,7 +94,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://zen-bhaskara-0d6cd4.netlify.app/"
@@ -104,7 +104,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://mcooper7649.github.io/CSS-TINDOG/"
@@ -114,7 +114,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://tender-shannon-6091f8.netlify.app/"
@@ -124,7 +124,7 @@ class FooterPage extends Component {
                   </li>
                   <li className="">
                     <a
-                      className="hover:text-red-300"
+                      className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
                       href="https://cranky-snyder-38237a.netlify.app/"
@@ -164,7 +164,7 @@ class FooterPage extends Component {
                 <h4>Subscribe</h4>
                 <div className="">
                   <a
-                    className="text-red-500 hover:text-red-300"
+                    className="text-blue-500 hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
                     href="https://aqueous-ocean-42020.herokuapp.com/"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js';
-import Background from '../images/aboutbg.jpeg';
+import './Logo.css';
 import imageUrlBuilder from '@sanity/image-url';
 import { Button } from '@material-ui/core';
 
@@ -58,10 +58,7 @@ export default function About() {
     );
 
   return (
-    <main
-      style={{ backgroundImage: 'url(' + Background + ')' }}
-      className="bg-cover relative"
-    >
+    <main className="bg-img bg-cover relative">
       <div className="lg:pt-48 p-3 lg:px-20 px-3 mx-auto relative">
         <section className="overflow-hidden bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20 py-6 px-3 mx-20">
           <img
