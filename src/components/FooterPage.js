@@ -20,9 +20,19 @@ class FooterPage extends Component {
                       className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://distracted-ardinghelli-143d8e.netlify.app/"
+                      href="https://optimistic-bose-278208.netlify.app/"
                     >
-                      <i className="fas fa-2x fa-dice"></i> Yahtzee
+                      <i class="fas fa-2x fa-portrait"></i> NFT Minter
+                    </a>
+                  </li>{' '}
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://wonderful-joliot-530457.netlify.app/"
+                    >
+                      <i className="fas fa-2x fa-palette"></i> Handy Palette
                     </a>
                   </li>
                   <li className="">
@@ -44,16 +54,6 @@ class FooterPage extends Component {
                       href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
                     >
                       <i className="fa fa-2x fa-edit"></i> Todo List
-                    </a>
-                  </li>
-                  <li className="">
-                    <a
-                      className="hover:text-blue-300"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://sad-lovelace-f153f1.netlify.app/"
-                    >
-                      <i className="fas fa-2x fa-coins"></i> Flip a' Coin
                     </a>
                   </li>
                   <li className="">
@@ -87,9 +87,19 @@ class FooterPage extends Component {
                       className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://wonderful-joliot-530457.netlify.app/"
+                      href="https://distracted-ardinghelli-143d8e.netlify.app/"
                     >
-                      <i className="fas fa-2x fa-palette"></i> Handy Palette
+                      <i className="fas fa-2x fa-dice"></i> Yahtzee
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://sad-lovelace-f153f1.netlify.app/"
+                    >
+                      <i className="fas fa-2x fa-coins"></i> Flip a' Coin
                     </a>
                   </li>
                   <li className="">
