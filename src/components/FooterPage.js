@@ -24,17 +24,8 @@ class FooterPage extends Component {
                     >
                       <i class="fas fa-2x fa-portrait"></i> NFT Minter
                     </a>
-                  </li>{' '}
-                  <li className="">
-                    <a
-                      className="hover:text-blue-300"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://wonderful-joliot-530457.netlify.app/"
-                    >
-                      <i className="fas fa-2x fa-palette"></i> Handy Palette
-                    </a>
                   </li>
+
                   <li className="">
                     <a
                       className="hover:text-blue-300"
@@ -51,11 +42,12 @@ class FooterPage extends Component {
                       className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
+                      href="https://mcooper7649.github.io/CSS-TINDOG/"
                     >
-                      <i className="fa fa-2x fa-edit"></i> Todo List
+                      <i className="fa fa-2x fa-mobile"></i> Tindog
                     </a>
                   </li>
+
                   <li className="">
                     <a
                       className="hover:text-blue-300"
@@ -112,16 +104,7 @@ class FooterPage extends Component {
                       <i className="fas fa-2x fa-skull-crossbones"></i> HangMan
                     </a>
                   </li>
-                  <li className="">
-                    <a
-                      className="hover:text-blue-300"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://mcooper7649.github.io/CSS-TINDOG/"
-                    >
-                      <i className="fa fa-2x fa-mobile"></i> Tindog
-                    </a>
-                  </li>
+
                   <li className="">
                     <a
                       className="hover:text-blue-300"
@@ -140,6 +123,42 @@ class FooterPage extends Component {
                       href="https://cranky-snyder-38237a.netlify.app/"
                     >
                       <i className="fa fa-2x fa-gem"></i> Number Gen
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-col">
+                <h4>Utilities</h4>
+                <ul>
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://suspicious-liskov-bc2bcf.netlify.app/"
+                    >
+                      <i class="fas fa-2x fa-language"></i> Multi-Language &
+                      Dark Mode
+                    </a>
+                  </li>{' '}
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://wonderful-joliot-530457.netlify.app/"
+                    >
+                      <i className="fas fa-2x fa-palette"></i> Handy Palette
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
+                    >
+                      <i className="fa fa-2x fa-edit"></i> Todo List
                     </a>
                   </li>
                 </ul>
@@ -169,9 +188,7 @@ class FooterPage extends Component {
                     style={{ height: 35, width: 35 }}
                   />
                 </div>
-              </div>
-              <div className="footer-col">
-                <h4>Subscribe</h4>
+                <h4 className="sub-btn">Subscribe</h4>
                 <div className="">
                   <a
                     className="text-blue-500 hover:text-blue-300"
@@ -184,6 +201,7 @@ class FooterPage extends Component {
                   </a>
                 </div>
               </div>
+              <div className="footer-col"></div>
             </div>
           </div>
         </footer>
