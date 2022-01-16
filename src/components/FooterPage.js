@@ -156,6 +156,16 @@ class FooterPage extends Component {
                       className="hover:text-blue-300"
                       target="_blank"
                       rel="noreferrer"
+                      href="https://compassionate-borg-a5e992.netlify.app"
+                    >
+                      <i class="fas fa-2x fa-images"></i> Image Finder
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="hover:text-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
                       href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
                     >
                       <i className="fa fa-2x fa-edit"></i> Todo List
