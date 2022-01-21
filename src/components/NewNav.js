@@ -5,7 +5,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between p-3 bg-orange-400">
+      <nav className="h-48 relative flex flex-wrap items-center justify-between p-3 bg-orange-400">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <NavLink
@@ -40,28 +40,28 @@ export default function Navbar({ fixed }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink
-                  className="px-3 py-2 flex items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
                   to="/post"
                 >
-                  <i className="fas fa-blog text-lg leading-lg text-white opacity-75"></i>
+                  <i className="fas fa-blog  opacity-75"></i>
                   <span className="ml-2">Blog</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="px-3 py-2 flex items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
                   to="/project"
                 >
-                  <i className="fas fa-folder-open text-lg leading-lg text-white opacity-75"></i>
+                  <i className="fas fa-folder-open  opacity-75"></i>
                   <span className="ml-2">Projects</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="px-3 py-2 flex items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
                   to="/about"
                 >
-                  <i className="fas fa-user-circle text-lg leading-lg text-white opacity-75"></i>
+                  <i className="fas fa-user-circle  opacity-75"></i>
                   <span className="ml-2">About</span>
                 </NavLink>
               </li>

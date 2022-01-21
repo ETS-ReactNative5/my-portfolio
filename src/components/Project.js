@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-materialize';
+import { Link } from 'react-router-dom';
 import sanityClient from '../client.js';
 import './Logo.css';
 
@@ -67,14 +69,18 @@ export default function Project() {
                 />
 
                 <h3 className="text-blue-600 text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
-                  <a
-                    href={project.link}
+                  <Button
+                    onClick={() => window.open(project.link, '_blank')}
                     alt={project.title}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="project-btn"
                   >
-                    {project.title}
-                  </a>
+                    <p className="text-red-500 font-bold hover:text-red-400">
+                      {' '}
+                      {project.title}
+                    </p>
+                  </Button>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">
                   <span>
@@ -93,17 +99,17 @@ export default function Project() {
                 <p className="my-6 text-sm lg:text-lg text-gray-700 leading-relaxed">
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-red-500 font-bold hover:underline hover:text-red-400"
+                <Button
+                  className="project-btn"
+                  onClick={() => window.open(project.link, '_blank')}
                 >
-                  View The Project
-                  <span role="img" aria-label="up pointer">
-                    👆🏻
-                  </span>
-                </a>
+                  <p className="text-red-500 font-bold hover:text-red-400">
+                    View The Project
+                    <span role="img" aria-label="up pointer">
+                      👆🏻
+                    </span>
+                  </p>
+                </Button>
               </article>
             ))}
         </section>

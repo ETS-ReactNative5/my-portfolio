@@ -128,7 +128,7 @@ class FooterPage extends Component {
                 </ul>
               </div>
               <div className="footer-col">
-                <h4>Utilities</h4>
+                <h4 className="">Utilities</h4>
                 <ul>
                   <li className="">
                     <a
@@ -174,7 +174,7 @@ class FooterPage extends Component {
                 </ul>
               </div>
               <div className="footer-col">
-                <h4>Social</h4>
+                <h4 className="">Social</h4>
                 <div className="">
                   <SocialIcon
                     url="https://github.com/mcooper7649"

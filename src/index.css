@@ -20,6 +20,15 @@
   font-size: 6.2em;
 }
 
+.fa-envelope-square {
+  font-size: 4rem !important;
+}
+
+.project-btn {
+  background-color: lavender;
+  inline-size: -webkit-fill-available;
+}
+
 @media (max-width: 800px) {
   .home-name {
     font-size: 3.2em;
