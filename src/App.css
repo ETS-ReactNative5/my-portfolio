@@ -7,5 +7,5 @@
 }
 
 .email-btn {
-  min-width: min-content;
+  min-width: -webkit-fill-available;
 }

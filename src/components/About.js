@@ -68,35 +68,35 @@ export default function About() {
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="overflow-hidden max-w-4xl rounded text-lg bg-red-200 bg-opacity-75 mt-3">
+          <div className="overflow-hidden w-3/5 p-5 justify-center rounded text-lg bg-red-200 bg-opacity-75 mt-3">
             <h1 className="p-2 m-2 text-center cursive text-3xl lg:text-5xl text-gray-100 mb-4">
               Hey there. I'm <span className="text-red-700">{author.name}</span>
             </h1>
-            <p className="text-center text-red-700 lg:text-2xl">{author.bio}</p>
+            <p className="text-center text-red-700 lg:text-2xl p-4">
+              {author.bio}
+            </p>
             <div className="text-white">
               {/* <h2 className="text-center text-red-700 text-2xl py-3">Get In Touch</h2> */}
-              <div className="lg:flex p-3 text-center">
-                <div className="lg:flex">
-                  <p className="text-xl pr-5 pl-5 text-center">
-                    Wanna talk about code? New Opportunities? Anything? Feel
-                    free to reach out.
-                  </p>
-                </div>
-                <div className="place-content-stretch w-auto">
-                  <Button
-                    className="h-24 w-auto pt-4 email-btn"
-                    target="_blank"
-                    rel="noreferrer"
-                    href={process.env.REACT_APP_MAILCHIMP_API_URL}
-                    variant="contained"
-                    color="secondary"
-                    onClick={() =>
-                      (window.location = 'mailto:mcooer7649@gmail.com')
-                    }
-                  >
-                    <i className="text-4xl animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
-                  </Button>
-                </div>
+
+              <p className="text-xl p-5 pl-5 text-center ">
+                Wanna talk about code? New Opportunities? Anything? Feel free to
+                reach out.
+              </p>
+
+              <div className="place-content-stretch w-auto">
+                <Button
+                  className="h-24 w-auto pt-4 email-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={process.env.REACT_APP_MAILCHIMP_API_URL}
+                  variant="contained"
+                  color="secondary"
+                  onClick={() =>
+                    (window.location = 'mailto:mcooer7649@gmail.com')
+                  }
+                >
+                  <i className="text-4xl animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
+                </Button>
               </div>
             </div>
           </div>
