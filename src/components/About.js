@@ -60,7 +60,7 @@ export default function About() {
   console.log(author);
 
   return (
-    <main className="bg-img mySection">
+    <main className="bg-img2 mySection">
       <div className="p-3 px-3 mx-auto">
         <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex px-3">
           <img
