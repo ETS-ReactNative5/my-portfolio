@@ -40,28 +40,28 @@ export default function Navbar({ fixed }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink
-                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:text-blue-800 bg-blend-color"
                   to="/post"
                 >
-                  <i className="fas fa-blog  opacity-75"></i>
+                  <i className="fas fa-blog myIcon"></i>
                   <span className="ml-2">Blog</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2 items-center text-med uppercase font-bold leading-snug text-white hover:text-blue-800 "
                   to="/project"
                 >
-                  <i className="fas fa-folder-open  opacity-75"></i>
+                  <i className="fas fa-folder-open myIcon "></i>
                   <span className="ml-2">Projects</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:text-blue-800"
                   to="/about"
                 >
-                  <i className="fas fa-user-circle  opacity-75"></i>
+                  <i className="fas fa-user-circle myIcon "></i>
                   <span className="ml-2">About</span>
                 </NavLink>
               </li>
