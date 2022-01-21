@@ -49,7 +49,7 @@ export default function Project() {
           placeholder="Search by keyword"
           onChange={handleChange}
         />
-        <h1 className="my-6 rounded text-3xl text-pink-600 lg:text-5xl flex justify-center cutive bg-green-100">
+        <h1 className="my-6 py-10 rounded text-3xl text-pink-600 lg:text-5xl flex justify-center cutive bg-green-100">
           My Projects
         </h1>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">

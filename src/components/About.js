@@ -60,15 +60,15 @@ export default function About() {
   console.log(author);
 
   return (
-    <main className="bg-img bg-cover relative">
-      <div className="lg:pt-48 p-3 lg:px-20 px-3 mx-auto relative">
+    <main className="bg-img bg-cover mySection">
+      <div className="lg:p-32 p-3 lg:px-20 px-3 mx-auto">
         <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20  px-3">
           <img
             src={urlFor(author.authorImage).url()}
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="overflow-hidden w-3/5 p-5 justify-center rounded text-lg bg-red-200 bg-opacity-75 mt-3">
+          <div className="overflow-hidden w-10/12 p-5 justify-center rounded text-lg bg-red-200 bg-opacity-75 mt-3 sm:mb-3">
             <h1 className="p-2 m-2 text-center cursive text-3xl lg:text-5xl text-gray-100 mb-4">
               Hey there. I'm <span className="text-red-700">{author.name}</span>
             </h1>
@@ -83,9 +83,9 @@ export default function About() {
                 reach out.
               </p>
 
-              <div className="place-content-stretch w-auto">
+              <div className="place-content-stretch w-auto sm:auto">
                 <Button
-                  className="h-24 w-auto pt-4 email-btn"
+                  className="h-24 w-auto pt-4 email-btn sm:h-1/6"
                   target="_blank"
                   rel="noreferrer"
                   href={process.env.REACT_APP_MAILCHIMP_API_URL}
@@ -101,7 +101,6 @@ export default function About() {
             </div>
           </div>
         </section>
-        <div className="py-10 lg:py-40"></div>
       </div>
     </main>
   );

@@ -29,6 +29,10 @@
   inline-size: -webkit-fill-available;
 }
 
+.mySection {
+  text-align: -webkit-center;
+}
+
 @media (max-width: 800px) {
   .home-name {
     font-size: 3.2em;

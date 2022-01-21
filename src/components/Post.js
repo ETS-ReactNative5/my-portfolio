@@ -45,7 +45,7 @@ export default function Post() {
           placeholder="Search by keyword..."
           onChange={handleChange}
         />
-        <h1 className="my-6 rounded bg-gray-900 text-pink-600 text-3xl lg:text-5xl flex justify-center cutive">
+        <h1 className="my-6 rounded bg-gray-900 text-pink-600 text-3xl lg:text-5xl py-10 flex justify-center cutive">
           Code Dojo Blog
         </h1>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}
