@@ -32,12 +32,12 @@ export default function Navbar({ fixed }) {
           </div>
           <div
             className={
-              'lg:flex flex-grow items-center' +
+              'lg:flex flex-grow items-center flex-row-reverse' +
               (navbarOpen ? ' flex' : ' hidden')
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink
                   className="px-2 py-2  items-center text-med uppercase font-bold leading-snug text-white hover:text-blue-800 bg-blend-color"

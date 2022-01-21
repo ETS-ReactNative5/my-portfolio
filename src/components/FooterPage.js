@@ -72,7 +72,7 @@ class FooterPage extends Component {
                 </ul>
               </div>
               <div className="footer-col">
-                <h4>More Projects</h4>
+                <h4>Games</h4>
                 <ul>
                   <li className="">
                     <a

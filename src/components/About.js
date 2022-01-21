@@ -21,6 +21,7 @@ export default function About() {
       }`
       )
       .then((data) => setAuthor(data[0]))
+
       .catch(console.error);
   }, []);
 
@@ -56,17 +57,18 @@ export default function About() {
         </button>
       </div>
     );
+  console.log(author);
 
   return (
     <main className="bg-img bg-cover relative">
       <div className="lg:pt-48 p-3 lg:px-20 px-3 mx-auto relative">
-        <section className="overflow-hidden bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20  px-3 mx-20">
+        <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20  px-3">
           <img
             src={urlFor(author.authorImage).url()}
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
             alt="Michael"
           />
-          <div className="overflow-hidden rounded text-lg bg-red-200 bg-opacity-75 mt-3">
+          <div className="overflow-hidden max-w-4xl rounded text-lg bg-red-200 bg-opacity-75 mt-3">
             <h1 className="p-2 m-2 text-center cursive text-3xl lg:text-5xl text-gray-100 mb-4">
               Hey there. I'm <span className="text-red-700">{author.name}</span>
             </h1>
@@ -74,23 +76,27 @@ export default function About() {
             <div className="text-white">
               {/* <h2 className="text-center text-red-700 text-2xl py-3">Get In Touch</h2> */}
               <div className="lg:flex p-3 text-center">
-                <p className="text-xl pb-5 pr-5">
-                  Wanna talk about code? New Opportunities? Anything? Feel free
-                  to reach out.
-                </p>
-                <Button
-                  className="h-24 w-auto pt-4"
-                  target="_blank"
-                  rel="noreferrer"
-                  href={process.env.REACT_APP_MAILCHIMP_API_URL}
-                  variant="contained"
-                  color="secondary"
-                  onClick={() =>
-                    (window.location = 'mailto:mcooer7649@gmail.com')
-                  }
-                >
-                  <i className="text-4xl animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
-                </Button>
+                <div className="lg:flex">
+                  <p className="text-xl pr-5 pl-5 text-center">
+                    Wanna talk about code? New Opportunities? Anything? Feel
+                    free to reach out.
+                  </p>
+                </div>
+                <div className="place-content-stretch w-auto">
+                  <Button
+                    className="h-24 w-auto pt-4 email-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={process.env.REACT_APP_MAILCHIMP_API_URL}
+                    variant="contained"
+                    color="secondary"
+                    onClick={() =>
+                      (window.location = 'mailto:mcooer7649@gmail.com')
+                    }
+                  >
+                    <i className="text-4xl animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

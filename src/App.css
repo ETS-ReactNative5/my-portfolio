@@ -5,3 +5,7 @@
 .myIcon {
   height: 24px;
 }
+
+.email-btn {
+  min-width: min-content;
+}
