@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js';
 import './Logo.css';
 import imageUrlBuilder from '@sanity/image-url';
-import { Button } from 'react-materialize';
+import ContactForm from './ContactForm.js';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -60,9 +60,9 @@ export default function About() {
   console.log(author);
 
   return (
-    <main className="bg-img bg-cover mySection">
-      <div className="lg:p-32 p-3 lg:px-20 px-3 mx-auto">
-        <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex lg:p-20  px-3">
+    <main className="bg-img mySection">
+      <div className="p-3 px-3 mx-auto">
+        <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex px-3">
           <img
             src={urlFor(author.authorImage).url()}
             className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
@@ -83,21 +83,7 @@ export default function About() {
                 reach out.
               </p>
 
-              <div className="place-content-stretch w-auto sm:auto">
-                <Button
-                  className="h-24 w-auto pt-4 email-btn sm:h-1/6"
-                  target="_blank"
-                  rel="noreferrer"
-                  href={process.env.REACT_APP_MAILCHIMP_API_URL}
-                  variant="contained"
-                  color="secondary"
-                  onClick={() =>
-                    (window.location = 'mailto:mcooer7649@gmail.com')
-                  }
-                >
-                  <i className="text-4xl animate-pulse text-yellow-100  fas fa-2x fa-envelope-square"></i>
-                </Button>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>
