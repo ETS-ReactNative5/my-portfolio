@@ -52,7 +52,7 @@ export default function Post() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects &&
             filteredProjects.map((post, index) => (
-              <article>
+              <article key={index}>
                 <h3 className="my-3 text-gray-800 text-lg font-blog p-3 bg-red-600 text-red-100 bg-opacity-75 rounded">
                   {post.title}
                 </h3>

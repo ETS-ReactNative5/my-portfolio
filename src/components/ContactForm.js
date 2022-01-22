@@ -2,8 +2,11 @@ import { Button } from 'react-materialize';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import { init } from '@emailjs/browser';
 
 import { useForm } from 'react-hook-form';
+
+init(process.env.REACT_APP_USER_ID);
 
 const ContactForm = () => {
   const {
@@ -39,12 +42,12 @@ const ContactForm = () => {
         subject,
         message,
       };
-      await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+      await emailjs.send({
+        serviceID: process.env.REACT_APP_SERVICE_ID,
+        templateID: process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
-      );
+        userID: process.env.REACT_APP_USER_ID,
+      });
       reset();
       toastifySuccess();
     } catch (e) {

@@ -21,7 +21,7 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://optimistic-bose-278208.netlify.app/"
                   >
-                    <i class="fas fa-2x fa-portrait"></i> NFT Minter
+                    <i className="fas fa-2x fa-portrait"></i> NFT Minter
                   </a>
                 </li>
 
@@ -134,8 +134,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://suspicious-liskov-bc2bcf.netlify.app/"
                   >
-                    <i class="fas fa-2x fa-language"></i> Multi-Language & Dark
-                    Mode
+                    <i className="fas fa-2x fa-language"></i> Multi-Language &
+                    Dark Mode
                   </a>
                 </li>{' '}
                 <li className="">
@@ -155,7 +155,7 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://compassionate-borg-a5e992.netlify.app"
                   >
-                    <i class="fas fa-2x fa-images"></i> Image Finder
+                    <i className="fas fa-2x fa-images"></i> Image Finder
                   </a>
                 </li>
                 <li className="">
