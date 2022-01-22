@@ -5,7 +5,7 @@
   top: 0;
   bottom: 0;
   position: absolute;
-  background: rgba(0, 0, 0, 0.692);
+  background: rgba(10, 10, 10, 0.315);
   background-size: 1800% 1800%;
 
   -webkit-animation: rainbow 18s ease infinite;

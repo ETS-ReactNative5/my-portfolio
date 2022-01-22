@@ -41,7 +41,7 @@ export default function Project() {
   );
 
   return (
-    <main className="bg-blue-200 min-h-screen lg:p-12 ">
+    <main className="bg-img2 min-h-screen lg:p-12 ">
       <section className="p-3 container mx-auto bg-gray-300">
         <input
           className="p-1 w-full"

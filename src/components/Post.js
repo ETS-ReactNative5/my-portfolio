@@ -37,7 +37,7 @@ export default function Post() {
     );
 
   return (
-    <main className="min-h-screen lg:p-12 p-4 bg-blue-100">
+    <main className="min-h-screen lg:p-12 p-4 bg-img2">
       <section className="p-3 container mx-auto bg-blue-700">
         <input
           className="p-1 w-full"
@@ -66,7 +66,7 @@ export default function Post() {
                       alt={post.mainImage.alt}
                       className="w-full h-full rounded-r object-cover absolute"
                     />
-                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                    <span className="relative h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-gray-800 text-sm font-blog p-1 bg-red-600 text-red-100 bg-opacity-75 rounded">
                         Focus: {post.subtitle}
                       </h3>

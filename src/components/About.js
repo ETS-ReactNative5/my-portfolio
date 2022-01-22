@@ -81,6 +81,11 @@ export default function About() {
                 Wanna talk about code? New Opportunities? Anything? Feel free to
                 reach out.
               </p>
+              <iframe
+                className="myFrame"
+                src="https://form.jotform.com/220215706083144"
+                title="W3Schools Free Online Web Tutorials"
+              ></iframe>
             </div>
           </div>
         </section>
