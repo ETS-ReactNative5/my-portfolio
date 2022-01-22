@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js';
 import './Logo.css';
 import imageUrlBuilder from '@sanity/image-url';
-import ContactForm from './ContactForm.js';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -82,8 +81,6 @@ export default function About() {
                 Wanna talk about code? New Opportunities? Anything? Feel free to
                 reach out.
               </p>
-
-              <ContactForm />
             </div>
           </div>
         </section>
