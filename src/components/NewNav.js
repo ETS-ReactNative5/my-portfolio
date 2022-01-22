@@ -5,7 +5,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="h-48 relative flex flex-wrap items-center justify-between p-3 bg-orange-400">
+      <nav className="h-48 relative flex flex-wrap items-center justify-between p-3 header-bg">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <NavLink
