@@ -41,22 +41,29 @@ export default function Post() {
 
   const styles = {
     main: isDarkMode
-      ? 'bg-gray-700 min-h-screen lg:p-12 p-4'
+      ? 'bg-gray-700 min-h-screen lg:p-12 p-4 '
       : 'bg-img2 min-h-screen lg:p-12 p-4 ',
     section: isDarkMode
-      ? 'p-3 container mx-auto bg-blue-200'
-      : 'p-3 container mx-auto bg-blue-700',
+      ? 'p-3 container mx-auto bg-blue-200 rounded-lg'
+      : 'p-3 container mx-auto bg-blue-700 rounded-lg',
+    input: {
+      backgroundColor: 'white',
+      border: '1px solid white',
+      borderRadius: '25px',
+      paddingLeft: '3px',
+    },
   };
   return (
     <main className={styles.main}>
       <section className={styles.section}>
         <input
-          className="p-1 w-full"
+          className="p-1 w-full rounded-md "
           type="search"
           placeholder="Search by keyword..."
           onChange={handleChange}
+          style={styles.input}
         />
-        <h1 className="my-6 rounded bg-gray-900 text-pink-600 text-3xl lg:text-5xl py-10 flex justify-center cutive">
+        <h1 className="my-6 rounded bg-gray-900 myText text-3xl lg:text-5xl flex justify-center cutive">
           Code Dojo Blog
         </h1>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}

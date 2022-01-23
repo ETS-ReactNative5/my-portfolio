@@ -48,8 +48,14 @@ export default function Project() {
       ? 'bg-gray-700 min-h-screen lg:p-12'
       : 'bg-img2 min-h-screen lg:p-12',
     section: isDarkMode
-      ? 'p-3 container mx-auto bg-gray-800'
-      : 'p-3 container mx-auto bg-gray-400',
+      ? 'p-3 container mx-auto bg-gray-800 rounded-lg'
+      : 'p-3 container mx-auto bg-gray-400 rounded-lg',
+    input: {
+      backgroundColor: 'white',
+      border: '1px solid white',
+      borderRadius: '25px',
+      paddingLeft: '3px',
+    },
   };
 
   return (
@@ -60,8 +66,9 @@ export default function Project() {
           type="search"
           placeholder="Search by keyword"
           onChange={handleChange}
+          style={styles.input}
         />
-        <h1 className="my-6 py-10 rounded text-3xl text-pink-600 lg:text-5xl flex justify-center cutive bg-green-100">
+        <h1 className="my-6 rounded text-3xl myText lg:text-5xl flex justify-center cutive bg-green-100">
           My Projects
         </h1>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
