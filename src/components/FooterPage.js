@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import './FooterPage.css';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 class FooterPage extends Component {
+  static contextType = ThemeContext;
+
   render() {
+    const { isDarkMode } = this.context;
+    const styleDiv = {
+      backgroundColor: isDarkMode ? 'black' : '',
+      color: isDarkMode ? 'white' : 'black',
+      textAlign: 'center',
+      padding: '2rem',
+    };
     return (
-      <footer className="footer">
+      <footer style={styleDiv} className="footer">
         <div className="container">
           <div className="row">
             <div className="footer-col">
@@ -208,7 +218,6 @@ class FooterPage extends Component {
                 </a>
               </div>
             </div>
-            <div className="footer-col"></div>
           </div>
         </div>
       </footer>

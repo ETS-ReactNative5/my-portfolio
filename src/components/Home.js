@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './Logo.css';
+import { ThemeContext } from '../contexts/ThemeContext';
+
 const axios = require('axios');
 
 class Home extends Component {
+  static contextType = ThemeContext;
   constructor(props) {
     super(props);
     this.state = {
-      quote: 'Welcome Sensei 🥷',
+      quote: 'Welcome to My Code Dojo 🥷',
       author: Date().slice(0, 16),
     };
   }
@@ -16,25 +19,25 @@ class Home extends Component {
       console.log(resp.data);
       setTimeout(() => {
         this.setState({
-          quote: 'This Place Is To Help Inspire Fellow Ninjas',
+          quote: 'A place to inspire',
           author: Date().slice(0, 16),
         });
       }, 2500);
       setTimeout(() => {
         this.setState({
-          quote: 'Please Check Out My Blog',
+          quote: 'Please check out the blog',
           author: Date().slice(0, 16),
         });
       }, 5000);
       setTimeout(() => {
         this.setState({
-          quote: 'Subscribe And View My Projects Too!',
+          quote: 'View my projects and drop me a comment.',
           author: Date().slice(0, 16),
         });
       }, 7500);
       setTimeout(() => {
         this.setState({
-          quote: 'Read This Famous Quote And Stay Motivated!',
+          quote: 'Thanks for popping by, check out this motivational quote!!',
           author: Date().slice(0, 16),
         });
       }, 10000);
@@ -48,8 +51,14 @@ class Home extends Component {
   }
 
   render() {
+    const { isDarkMode } = this.context;
+    const styles = {
+      classes: isDarkMode
+        ? 'bg-gray-700  h-screen pt-32 min-w-screen bg-cover'
+        : 'bg-img pt-32 min-w-screen bg-cover',
+    };
     return (
-      <main className="bg-img pt-32 min-w-screen bg-cover">
+      <main className={styles.classes}>
         <section className="relative justify-center h-full lg:px-8 lg:mx-20">
           <div className="h-auto grid p overflow-auto min-w-screen wrapper  mx-4 rounded shadow-2xl  lg:rounded-full ">
             {/* <h1 className="pt-3 text-center text-4xl lg:text-6xl text-green-100 font-bold cursive lg:home-name">Hello. I'm <span className="text-purple-800">Michael</span></h1> */}

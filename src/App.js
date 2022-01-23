@@ -10,6 +10,8 @@ import NewNav from './components/NewNav';
 import './App.css';
 import FooterPage from './components/FooterPage';
 
+import { ThemeProvider } from './contexts/ThemeContext';
+
 class App extends Component {
   render() {
     window.dataLayer.push({
@@ -60,15 +62,17 @@ class App extends Component {
           ></script>
           <title>My Code Dojo | by Michael Cooper</title>
         </Helmet>
-        <NewNav />
-        <Switch>
-          <Route component={Home} path="/" exact />
-          <Route component={About} path="/about" />
-          <Route component={SinglePost} path="/post/:slug" />
-          <Route component={Post} path="/post" />
-          <Route component={Project} path="/project" />
-        </Switch>
-        <FooterPage />
+        <ThemeProvider>
+          <NewNav />
+          <Switch>
+            <Route component={Home} path="/" exact />
+            <Route component={About} path="/about" />
+            <Route component={SinglePost} path="/post/:slug" />
+            <Route component={Post} path="/post" />
+            <Route component={Project} path="/project" />
+          </Switch>
+          <FooterPage />
+        </ThemeProvider>
       </BrowserRouter>
     );
   }

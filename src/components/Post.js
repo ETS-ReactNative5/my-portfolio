@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client.js';
 import './Logo.css';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 export default function Post() {
+  const { isDarkMode } = useContext(ThemeContext);
+
   const [postData, setPost] = useState([]);
   const [searchField, setSearchField] = useState('');
   useEffect(() => {
@@ -36,9 +39,17 @@ export default function Post() {
       project.title.toLowerCase().includes(searchField.toLowerCase())
     );
 
+  const styles = {
+    main: isDarkMode
+      ? 'bg-gray-700 min-h-screen lg:p-12 p-4'
+      : 'bg-img2 min-h-screen lg:p-12 p-4 ',
+    section: isDarkMode
+      ? 'p-3 container mx-auto bg-blue-200'
+      : 'p-3 container mx-auto bg-blue-700',
+  };
   return (
-    <main className="min-h-screen lg:p-12 p-4 bg-img2">
-      <section className="p-3 container mx-auto bg-blue-700">
+    <main className={styles.main}>
+      <section className={styles.section}>
         <input
           className="p-1 w-full"
           type="search"

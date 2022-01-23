@@ -1,13 +1,40 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { ThemeContext } from '../contexts/ThemeContext';
 
-export default function Navbar({ fixed }) {
+export default function Navbar({ fixed, props }) {
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
+  const styleDiv = {
+    backgroundColor: isDarkMode ? 'black' : '',
+    color: isDarkMode ? 'white' : 'black',
+    textAlign: 'center',
+    padding: '2rem',
+  };
+
+  const darkModeStyles = {
+    paddingTop: '80px',
+    position: 'absolute',
+    paddingLeft: '5px',
+  };
+
   return (
     <>
-      <nav className="h-48 relative flex flex-wrap items-center justify-between p-3 header-bg">
+      <nav
+        style={styleDiv}
+        className="header-bg h-48 relative flex flex-wrap items-center justify-between p-3"
+      >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
+            <div style={darkModeStyles} className="switch">
+              <label>
+                <i className="far fa-lightbulb"></i>
+                <input onChange={toggleTheme} type="checkbox" />
+                <span className="lever"></span>
+                <i className="far fa-moon"></i>
+              </label>
+            </div>
             <NavLink
               to="/"
               exact
@@ -22,6 +49,7 @@ export default function Navbar({ fixed }) {
               <span className="text-4xl md:text-5xl text-blue-100">D</span>
               <span className="text-4xl md:text-5xl">ojo</span>
             </NavLink>
+
             <button
               className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"

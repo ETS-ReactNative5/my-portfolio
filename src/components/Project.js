@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Button } from 'react-materialize';
 import sanityClient from '../client.js';
 import './Logo.css';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 export default function Project() {
+  const { isDarkMode } = useContext(ThemeContext);
+
   const [projectData, setProjectData] = useState([]);
   const [searchField, setSearchField] = useState('');
 
@@ -40,9 +43,18 @@ export default function Project() {
     project.title.toLowerCase().includes(searchField.toLowerCase())
   );
 
+  const styles = {
+    main: isDarkMode
+      ? 'bg-gray-700 min-h-screen lg:p-12'
+      : 'bg-img2 min-h-screen lg:p-12',
+    section: isDarkMode
+      ? 'p-3 container mx-auto bg-gray-800'
+      : 'p-3 container mx-auto bg-gray-400',
+  };
+
   return (
-    <main className="bg-img2 min-h-screen lg:p-12 ">
-      <section className="p-3 container mx-auto bg-gray-300">
+    <main className={styles.main}>
+      <section className={styles.section}>
         <input
           className="p-1 w-full"
           type="search"
