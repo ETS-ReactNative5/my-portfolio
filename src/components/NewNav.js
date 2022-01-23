@@ -39,7 +39,7 @@ export default function Navbar({ fixed, props }) {
         className="header-bg h-auto relative flex flex-wrap items-center justify-between"
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-          <div className="mx-3 w-full relative flex lg:w-auto lg:static lg:justify-start">
+          <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <div className="switch">
               <label className="my-label">
                 <div style={darkModeStyles}>
@@ -70,7 +70,7 @@ export default function Navbar({ fixed, props }) {
             </NavLink>
 
             <button
-              className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="ml-8 text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
