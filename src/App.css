@@ -10,12 +10,28 @@
   min-width: -webkit-fill-available;
 }
 
+.my-label {
+  margin-right: 20px;
+}
+
+.lever {
+  margin-left: 20px !important;
+}
+
 .switch label input[type='checkbox']:checked + .lever:after {
   background-color: #266ca6;
 }
 
-.lever {
-  margin-left: 30px !important;
+@media (max-width: 500px) {
+  .fa-moon {
+    display: none !important;
+  }
+  .fa-lightbulb {
+    display: none !important;
+  }
+  .switch label .lever {
+    margin: 20px;
+  }
 }
 
 .header-bg {

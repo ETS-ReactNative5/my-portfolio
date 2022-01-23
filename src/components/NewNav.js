@@ -10,13 +10,10 @@ export default function Navbar({ fixed, props }) {
     backgroundColor: isDarkMode ? 'black' : '',
     color: isDarkMode ? 'white' : 'black',
     textAlign: 'center',
-
-    paddingRight: '5%',
   };
 
   const darkModeStyles = {
     color: isDarkMode ? '' : 'yellow',
-
     width: '0px',
     height: '0px',
     borderRadius: '50%',
@@ -32,20 +29,24 @@ export default function Navbar({ fixed, props }) {
   const moonStyles = {
     color: isDarkMode ? 'yellow' : '',
     transition: isDarkMode ? '' : 'color 2s ease-out',
+    marginLeft: '-10px',
   };
 
   return (
     <>
       <nav
         style={styleDiv}
-        className="header-bg h-48 relative flex flex-wrap items-center justify-between p-3"
+        className="header-bg h-auto relative flex flex-wrap items-center justify-between p-3"
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <div className="switch">
-              <label>
+              <label className="my-label">
                 <div style={darkModeStyles}>
-                  <i style={lightbulbStyles} className="far fa-lightbulb"></i>
+                  <i
+                    style={lightbulbStyles}
+                    className="wow far fa-lightbulb"
+                  ></i>
                 </div>
 
                 <input onChange={toggleTheme} type="checkbox" />

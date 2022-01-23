@@ -33,6 +33,10 @@
   text-align: -webkit-center;
 }
 
+button:focus {
+  background-color: #7ba4a400 !important;
+}
+
 @media (max-width: 800px) {
   .home-name {
     font-size: 3.2em;
