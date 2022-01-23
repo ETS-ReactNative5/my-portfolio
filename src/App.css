@@ -26,7 +26,7 @@
     display: none !important;
   }
   .switch label .lever {
-    margin: 20px;
+    margin: 5px;
   }
 }
 
@@ -38,6 +38,12 @@
 
 .header-bg {
   background-color: rgb(247, 170, 170);
+}
+
+@media (max-height: 500px) {
+  nav i {
+    height: 30px;
+  }
 }
 
 iframe {

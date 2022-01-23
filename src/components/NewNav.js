@@ -36,10 +36,10 @@ export default function Navbar({ fixed, props }) {
     <>
       <nav
         style={styleDiv}
-        className="header-bg h-auto relative flex flex-wrap items-center justify-between p-3"
+        className="header-bg h-auto relative flex flex-wrap items-center justify-between"
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-          <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
+          <div className="mx-3 w-full relative flex lg:w-auto lg:static lg:justify-start">
             <div className="switch">
               <label className="my-label">
                 <div style={darkModeStyles}>
@@ -58,15 +58,15 @@ export default function Navbar({ fixed, props }) {
               to="/"
               exact
               activeClassName="text-white"
-              className="inline-flex items-center py-6 text-blue-500 hover:text-blue-800  text-4xl font-bold cursive tracking-widest"
+              className="inline-block items-center py-4 text-blue-500 hover:text-blue-800  lg:text-4xl font-bold cursive tracking-widest"
             >
-              <i className="fas fa-user-ninja fa-2x px-2 "></i>
+              <i className="fas fa-user-ninja fa-2x"></i>
               <span className="text-4xl md:text-5xl text-blue-100">M</span>
               <span className="text-4xl md:text-5xl">y</span>
               <span className="text-4xl md:text-5xl text-blue-100">C</span>
               <span className="text-4xl md:text-5xl">ode</span>
               <span className="text-4xl md:text-5xl text-blue-100">D</span>
-              <span className="text-4xl md:text-5xl">ojo</span>
+              <span className="pr-3 text-4xl md:text-5xl">ojo</span>
             </NavLink>
 
             <button
