@@ -10,10 +10,6 @@
   min-width: -webkit-fill-available;
 }
 
-.my-label {
-  margin-right: 20px;
-}
-
 .lever {
   margin-left: 20px !important;
 }
@@ -31,6 +27,12 @@
   }
   .switch label .lever {
     margin: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .my-label {
+    margin-right: 20px;
   }
 }
 
