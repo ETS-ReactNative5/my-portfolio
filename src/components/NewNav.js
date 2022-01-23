@@ -10,13 +10,28 @@ export default function Navbar({ fixed, props }) {
     backgroundColor: isDarkMode ? 'black' : '',
     color: isDarkMode ? 'white' : 'black',
     textAlign: 'center',
-    padding: '2rem',
+
+    paddingRight: '5%',
   };
 
   const darkModeStyles = {
-    paddingTop: '80px',
-    position: 'absolute',
-    paddingLeft: '5px',
+    color: isDarkMode ? '' : 'yellow',
+
+    width: '0px',
+    height: '0px',
+    borderRadius: '50%',
+    backgroundColor: isDarkMode ? '#7BA4A4' : '',
+    // boxShadow: isDarkMode ? '0 0 20px 10px #fff, 0 0 50px 25px #0ff' : '',
+    // transition: isDarkMode ? 'box-shadow 4s ease-out' : '',
+  };
+
+  const lightbulbStyles = {
+    color: isDarkMode ? '' : 'yellow',
+    transition: isDarkMode ? 'color 2s ease-out' : '',
+  };
+  const moonStyles = {
+    color: isDarkMode ? 'yellow' : '',
+    transition: isDarkMode ? '' : 'color 2s ease-out',
   };
 
   return (
@@ -27,12 +42,15 @@ export default function Navbar({ fixed, props }) {
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
-            <div style={darkModeStyles} className="switch">
+            <div className="switch">
               <label>
-                <i className="far fa-lightbulb"></i>
+                <div style={darkModeStyles}>
+                  <i style={lightbulbStyles} className="far fa-lightbulb"></i>
+                </div>
+
                 <input onChange={toggleTheme} type="checkbox" />
                 <span className="lever"></span>
-                <i className="far fa-moon"></i>
+                <i style={moonStyles} className="far fa-moon"></i>
               </label>
             </div>
             <NavLink
