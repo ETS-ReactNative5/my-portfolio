@@ -21,7 +21,7 @@ ul {
   list-style: none;
 }
 li {
-  text-align: justify;
+  text-align: left;
 }
 .sub-btn {
   margin-top: 50px;
@@ -46,7 +46,7 @@ li {
   margin-bottom: 10px;
 }
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 12px;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;

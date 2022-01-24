@@ -61,12 +61,12 @@ export default function Navbar({ fixed, props }) {
               className="inline-block items-center py-4 text-blue-500 hover:text-blue-800  lg:text-4xl font-bold cursive tracking-widest"
             >
               <i className="fas fa-user-ninja fa-2x"></i>
-              <span className="text-4xl md:text-5xl text-blue-100">M</span>
-              <span className="text-4xl md:text-5xl">y</span>
-              <span className="text-4xl md:text-5xl text-blue-100">C</span>
-              <span className="text-4xl md:text-5xl">ode</span>
-              <span className="text-4xl md:text-5xl text-blue-100">D</span>
-              <span className="pr-3 text-4xl md:text-5xl">ojo</span>
+              <span className="text-4xl lg:text-5xl text-blue-100">M</span>
+              <span className="text-4xl lg:text-5xl">y</span>
+              <span className="text-4xl lg:text-5xl text-blue-100">C</span>
+              <span className="text-4xl lg:text-5xl">ode</span>
+              <span className="text-4xl lg:text-5xl text-blue-100">D</span>
+              <span className="pr-3 text-4xl lg:text-5xl">ojo</span>
             </NavLink>
 
             <button
@@ -109,7 +109,7 @@ export default function Navbar({ fixed, props }) {
                   to="/about"
                 >
                   <i className="fas fa-user-circle myIcon "></i>
-                  <span className="ml-2">About</span>
+                  <span className="ml-2">Contact</span>
                 </NavLink>
               </li>
             </ul>

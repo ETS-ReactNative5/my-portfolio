@@ -59,7 +59,7 @@ export default function Post() {
         <input
           className="p-1 w-full rounded-md "
           type="search"
-          placeholder="Search by keyword..."
+          placeholder="🔍 Search by keyword eg: React, Node, Mongo"
           onChange={handleChange}
           style={styles.input}
         />
