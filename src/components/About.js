@@ -3,6 +3,7 @@ import sanityClient from '../client.js';
 import './Logo.css';
 import imageUrlBuilder from '@sanity/image-url';
 import { ThemeContext } from '../contexts/ThemeContext';
+import { ContactUs } from './ContactForm.js';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -82,16 +83,11 @@ export default function About() {
             <p className="text-center lg:text-2xl p-4">{author.bio}</p>
             <div className="text-white">
               {/* <h2 className="text-center text-red-700 text-2xl py-3">Get In Touch</h2> */}
-
+              <ContactUs />
               <p className="text-xl p-5 pl-5 text-center ">
                 Wanna talk about code? New Opportunities? Anything? Feel free to
                 reach out.
               </p>
-              <iframe
-                className="myFrame"
-                src="https://form.jotform.com/220215706083144"
-                title="W3Schools Free Online Web Tutorials"
-              ></iframe>
             </div>
           </div>
         </section>

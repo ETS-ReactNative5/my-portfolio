@@ -31,7 +31,7 @@ export default function Project() {
       }
       }`
       )
-      .then((data) => setProjectData(data))
+      .then((data) => setProjectData(data) + console.log(data))
       .catch(console.error);
   }, []);
 
@@ -49,7 +49,7 @@ export default function Project() {
       : 'bg-img2 min-h-screen lg:p-12',
     section: isDarkMode
       ? 'p-3 container mx-auto bg-gray-800 rounded-lg'
-      : 'p-3 container mx-auto bg-gray-400 rounded-lg',
+      : 'p-3 container mx-auto bg-gray-800 rounded-lg',
     input: {
       backgroundColor: 'white',
       border: '1px solid white',
@@ -68,7 +68,7 @@ export default function Project() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 rounded text-3xl myText lg:text-5xl flex justify-center cutive bg-green-100">
+        <h1 className="my-6 py-1 rounded text-3xl myText lg:text-5xl flex justify-center cutive">
           My Projects
         </h1>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">

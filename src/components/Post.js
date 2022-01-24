@@ -44,8 +44,8 @@ export default function Post() {
       ? 'bg-gray-700 min-h-screen lg:p-12 p-4 '
       : 'bg-img2 min-h-screen lg:p-12 p-4 ',
     section: isDarkMode
-      ? 'p-3 container mx-auto bg-blue-200 rounded-lg'
-      : 'p-3 container mx-auto bg-blue-700 rounded-lg',
+      ? 'p-3 container mx-auto bg-gray-800 opacity-10 rounded-lg'
+      : 'p-3 container mx-auto bg-gray-800 opacity-10 rounded-lg',
     input: {
       backgroundColor: 'white',
       border: '1px solid white',
@@ -63,7 +63,7 @@ export default function Post() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 rounded bg-gray-900 myText text-3xl lg:text-5xl flex justify-center cutive">
+        <h1 className="my-6 py-1 rounded bg-gray-900 myText text-3xl lg:text-5xl flex justify-center cutive">
           Code Dojo Blog
         </h1>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}

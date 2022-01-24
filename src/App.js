@@ -12,6 +12,10 @@ import FooterPage from './components/FooterPage';
 
 import { ThemeProvider } from './contexts/ThemeContext';
 
+require('dotenv').config();
+
+// console.log(process.env);
+
 class App extends Component {
   render() {
     window.dataLayer.push({
