@@ -12,8 +12,9 @@
   margin: 15px;
   cursor: pointer;
   overflow: hidden;
-  width: 15vw;
-  height: 21vw;
+  padding: 3px;
+  /* width: 20vw;
+  height: 23vw; */
   img {
     width: 100%;
     transition: transform 500ms ease;
