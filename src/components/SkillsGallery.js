@@ -1,5 +1,5 @@
 import React from 'react';
-import './SkillsGallery.css';
+import './SkillsGallery.scss';
 import bootstrap from '../images/gallery/bootstrap-5-1.svg';
 import css from '../images/gallery/css-3.svg';
 import firebase from '../images/gallery/firebase-1.svg';

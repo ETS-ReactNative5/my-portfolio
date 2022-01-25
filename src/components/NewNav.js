@@ -40,7 +40,7 @@ export default function Navbar({ fixed, props }) {
       >
         <div className="container flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
-            <div className="switch">
+            <div className="switch lg:pl-3">
               <label className="my-label">
                 <div style={darkModeStyles}>
                   <i

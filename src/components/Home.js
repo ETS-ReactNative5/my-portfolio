@@ -10,7 +10,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      quote: 'Welcome to My Code Dojo 🥷',
+      quote: 'Welcome 🥷',
       author: Date().slice(0, 16),
     };
   }
@@ -20,7 +20,7 @@ class Home extends Component {
       console.log(resp.data);
       setTimeout(() => {
         this.setState({
-          quote: 'My Code Dojo is here to Inspire',
+          quote: 'The Dojo is here to Inspire',
           author: Date().slice(0, 16),
         });
       }, 2500);
@@ -32,23 +32,16 @@ class Home extends Component {
       }, 5000);
       setTimeout(() => {
         this.setState({
-          quote:
-            'Currently looking to build on my current skillset listed below',
+          quote: 'Take this inspirational quote with you...',
           author: Date().slice(0, 16),
         });
       }, 7500);
       setTimeout(() => {
         this.setState({
-          quote: 'Thanks for popping by, check out this motivational quote!!',
-          author: Date().slice(0, 16),
-        });
-      }, 10000);
-      setTimeout(() => {
-        this.setState({
           quote: `${`"` + resp.data.content + `"`}`,
           author: `${`-` + resp.data.author}`,
         });
-      }, 12500);
+      }, 10000);
     });
   }
 
@@ -72,12 +65,12 @@ class Home extends Component {
     return (
       <main className={styles.classes}>
         <section className="content justify-center lg:px-8 lg:mx-20">
-          <div className="h-auto py-10 grid min-w-screen wrapper  mx-4 rounded shadow-2xl">
+          <div className="h-auto grid min-w-screen wrapper pb-5  mx-4 rounded shadow-2xl">
             {/* <h1 className="pt-3 text-center text-4xl lg:text-6xl text-green-100 font-bold cursive lg:home-name">Hello. I'm <span className="text-purple-800">Michael</span></h1> */}
-            <h2 className="myText lg:px-20 break-words pt-4 lg:pt-20 lg:pb-10 text-center text-3xl md:text-5xl font-bold cursive lg:home-name">
+            <h2 className="myText lg:px-20 break-words pt-4 lg:pb-10 text-center text-3xl md:text-5xl font-bold cursive lg:home-name uppercase">
               {this.state.quote}
             </h2>
-            <h2 className="myText break-words text-center m-auto text-xl font-bold cursive lg:home-name">
+            <h2 className="myText break-words pt-6 text-center m-auto text-xl font-bold cursive lg:home-name">
               {this.state.author}
               <i
                 onClick={getNewQuote}
