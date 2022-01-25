@@ -82,6 +82,7 @@ export default function Project() {
                 className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16"
               >
                 <img
+                  className="rounded"
                   src={project.mainImage.asset.url}
                   alt={project.mainImage.alt}
                 />
