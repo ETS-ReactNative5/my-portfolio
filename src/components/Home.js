@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Logo.css';
 import { ThemeContext } from '../contexts/ThemeContext';
 import Tiles from './SkillsGallery';
+import { Button } from 'react-materialize';
 
 const axios = require('axios');
 
@@ -59,6 +60,16 @@ class Home extends Component {
         ? 'bg-gray-700 pt-12 min-w-screen bg-cover'
         : 'bg-img pt-12 min-w-screen bg-cover',
     };
+
+    const getNewQuote = () => {
+      axios.get('https://api.quotable.io/random').then((resp) => {
+        console.log(resp.data);
+        this.setState({
+          quote: `${`"` + resp.data.content + `"`}`,
+          author: `${`-` + resp.data.author}`,
+        });
+      });
+    };
     return (
       <main className={styles.classes}>
         <section className="content justify-center lg:px-8 lg:mx-20">
@@ -69,6 +80,10 @@ class Home extends Component {
             </h2>
             <h2 className="myText break-words text-center m-auto text-xl font-bold cursive lg:home-name">
               {this.state.author}
+              <i
+                onClick={getNewQuote}
+                className="pl-4 mt-50 reload-icon fas fa-redo"
+              ></i>
             </h2>
           </div>
         </section>
