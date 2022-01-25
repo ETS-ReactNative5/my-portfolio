@@ -29,6 +29,7 @@ li {
 .footer {
   background-color: rgb(247, 170, 170);
   padding: 20px 0;
+  border-top: ridge;
 }
 .footer-col {
   width: 25%;

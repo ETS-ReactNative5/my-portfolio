@@ -68,7 +68,7 @@ export default function Project() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 py-1 rounded text-3xl myText lg:text-5xl flex justify-center cutive">
+        <h1 className="my-6 py-1 text-gray-200 rounded text-3xl lg:text-5xl flex justify-center cutive">
           My Projects
         </h1>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">

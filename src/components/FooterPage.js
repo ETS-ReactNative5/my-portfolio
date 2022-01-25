@@ -208,7 +208,7 @@ class FooterPage extends Component {
               <h4 className="sub-btn">Subscribe</h4>
               <div className="">
                 <a
-                  className="text-blue-500 hover:text-blue-300"
+                  className="text-blue-500 hover:text-blue-100"
                   target="_blank"
                   rel="noreferrer"
                   href="https://aqueous-ocean-42020.herokuapp.com/"

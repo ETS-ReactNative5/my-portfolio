@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client.js';
-import './Logo.css';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 export default function Post() {
@@ -63,7 +62,7 @@ export default function Post() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 py-1 rounded bg-gray-900 myText text-3xl lg:text-5xl flex justify-center cutive">
+        <h1 className="my-6 py-1 rounded text-gray-200 bg-gray-900 text-3xl lg:text-5xl flex justify-center cutive">
           Code Dojo Blog
         </h1>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}
