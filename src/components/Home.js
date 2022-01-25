@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Logo.css';
 import { ThemeContext } from '../contexts/ThemeContext';
 import Tiles from './SkillsGallery';
-import { Button } from 'react-materialize';
 
 const axios = require('axios');
 
