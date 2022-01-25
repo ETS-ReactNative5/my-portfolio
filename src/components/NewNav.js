@@ -39,7 +39,7 @@ export default function Navbar({ fixed, props }) {
         className="header-bg h-auto relative flex flex-wrap items-center justify-between"
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-          <div className="mx-3 w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <div className="switch">
               <label className="my-label">
                 <div style={darkModeStyles}>
