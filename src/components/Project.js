@@ -64,7 +64,7 @@ export default function Project() {
         <input
           className="p-1 w-full"
           type="search"
-          placeholder="🔍 Search by keyword eg: React, Node, MongoDB"
+          placeholder="🔍 Search by keyword eg: React, Node, Mongo"
           onChange={handleChange}
           style={styles.input}
         />
