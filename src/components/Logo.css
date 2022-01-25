@@ -93,3 +93,14 @@
     background-position: 0% 50%;
   }
 }
+
+hr.myHr {
+  border: none;
+  height: 20px;
+  width: 90%;
+  margin-top: 0;
+  border-bottom: 1px solid #f1e3d9;
+  box-shadow: 0 20px 20px -20px rgb(94, 94, 94);
+  margin: -50px auto 10px;
+  padding: 10px;
+}

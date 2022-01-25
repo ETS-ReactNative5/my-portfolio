@@ -87,10 +87,14 @@ class Home extends Component {
           </div>
         </section>
         <hr className="divider line glow my-10" contenteditable />
+        <h2 className="px-3 text-white lg:text-5xl uppercase">skillset</h2>
+
         <section className="">
           <Tiles />
-          <h2 className="text-white text-5xl uppercase">skillset</h2>
         </section>
+        <h5 className="text-xs p-6 text-white uppercase">
+          Click image for more info
+        </h5>
       </main>
     );
   }

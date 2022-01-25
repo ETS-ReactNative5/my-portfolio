@@ -38,7 +38,7 @@ export default function Navbar({ fixed, props }) {
         style={styleDiv}
         className="header-bg h-auto relative flex flex-wrap items-center justify-between"
       >
-        <div className="container mx-auto flex flex-wrap items-center justify-between">
+        <div className="container flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
             <div className="switch">
               <label className="my-label">
@@ -70,7 +70,7 @@ export default function Navbar({ fixed, props }) {
             </NavLink>
 
             <button
-              className="ml-8 text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="ml-8 text-white cursor-pointer text-xl leading-none pr-3 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >

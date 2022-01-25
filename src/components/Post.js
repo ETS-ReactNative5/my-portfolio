@@ -62,11 +62,10 @@ export default function Post() {
           onChange={handleChange}
           style={styles.input}
         />
-        <hr className=""></hr>
         <h1 className="my-6 py-1 rounded text-gray-200 bg-black text-3xl lg:text-5xl flex justify-center cutive">
           Code Dojo Blog
         </h1>
-        <hr className=""></hr>
+        <hr className="myHr"></hr>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects &&
