@@ -11,7 +11,8 @@ class Home extends Component {
     super(props);
     this.state = {
       quote: 'Welcome 🥷',
-      author: Date().slice(0, 16),
+      author: '',
+      reload: '',
     };
   }
 
@@ -37,9 +38,24 @@ class Home extends Component {
         });
       }, 7500);
       setTimeout(() => {
+        const getNewQuote = () => {
+          axios.get('https://api.quotable.io/random').then((resp) => {
+            console.log(resp.data);
+            this.setState({
+              quote: `${`"` + resp.data.content + `"`}`,
+              author: `${`-` + resp.data.author} `,
+            });
+          });
+        };
         this.setState({
           quote: `${`"` + resp.data.content + `"`}`,
           author: `${`-` + resp.data.author}`,
+          reload: (
+            <i
+              onClick={getNewQuote}
+              className="pl-4 mt-50 myText reload-icon fas fa-redo"
+            ></i>
+          ),
         });
       }, 10000);
     });
@@ -53,15 +69,6 @@ class Home extends Component {
         : 'bg-img pt-12 min-w-screen bg-cover',
     };
 
-    const getNewQuote = () => {
-      axios.get('https://api.quotable.io/random').then((resp) => {
-        console.log(resp.data);
-        this.setState({
-          quote: `${`"` + resp.data.content + `"`}`,
-          author: `${`-` + resp.data.author}`,
-        });
-      });
-    };
     return (
       <main className={styles.classes}>
         <section className="content justify-center lg:px-8 lg:mx-20">
@@ -72,11 +79,8 @@ class Home extends Component {
             </h2>
             <h2 className="myText break-words pt-6 text-center m-auto text-xl font-bold cursive lg:home-name">
               {this.state.author}
-              <i
-                onClick={getNewQuote}
-                className="pl-4 mt-50 reload-icon fas fa-redo"
-              ></i>
             </h2>
+            <h3>{this.state.reload}</h3>
           </div>
         </section>
         <hr className="divider line glow my-10" contenteditable />
