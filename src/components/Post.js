@@ -43,8 +43,8 @@ export default function Post() {
       ? 'bg-gray-700 min-h-screen lg:p-12 p-4 '
       : 'bg-img2 min-h-screen lg:p-12 p-4 ',
     section: isDarkMode
-      ? 'p-3 container mx-auto bg-gray-800 opacity-10 rounded-lg'
-      : 'p-3 container mx-auto bg-gray-800 opacity-10 rounded-lg',
+      ? 'p-5 container mx-auto bg-gray-800 opacity-10 rounded-lg'
+      : 'p-5 container mx-auto bg-gray-800 opacity-10 rounded-lg',
     input: {
       backgroundColor: 'white',
       border: '1px solid white',
@@ -62,15 +62,17 @@ export default function Post() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 py-1 rounded text-gray-200 bg-gray-900 text-3xl lg:text-5xl flex justify-center cutive">
+        <hr className=""></hr>
+        <h1 className="my-6 py-1 rounded text-gray-200 bg-black text-3xl lg:text-5xl flex justify-center cutive">
           Code Dojo Blog
         </h1>
+        <hr className=""></hr>
         {/* <h2 className="text-lg text-red-800 flex justify-center ">Stay Up-To-Date On My Coding Journey...</h2> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects &&
             filteredProjects.map((post, index) => (
               <article key={index}>
-                <h3 className="my-3 text-gray-800 text-lg font-blog p-3 bg-red-600 text-red-100 bg-opacity-75 rounded">
+                <h3 className="my-3 text-gray-800 text-lg font-blog p-3  text-red-100 bg-opacity-75 rounded">
                   {post.title}
                 </h3>
                 <Link to={'/post/' + post.slug.current} key={post.slug.current}>
@@ -84,7 +86,7 @@ export default function Post() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-sm font-blog p-1 bg-red-600 text-red-100 bg-opacity-75 rounded">
+                      <h3 className="text-gray-800 text-sm font-blog p-1  text-red-100 bg-opacity-75 rounded">
                         Focus: {post.subtitle}
                       </h3>
                     </span>

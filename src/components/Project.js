@@ -48,8 +48,8 @@ export default function Project() {
       ? 'bg-gray-700 min-h-screen lg:p-12'
       : 'bg-img2 min-h-screen lg:p-12',
     section: isDarkMode
-      ? 'p-3 container mx-auto bg-gray-800 rounded-lg'
-      : 'p-3 container mx-auto bg-gray-800 rounded-lg',
+      ? 'p-5 container mx-auto bg-gray-800 rounded-lg'
+      : 'p-5 container mx-auto bg-gray-800 rounded-lg',
     input: {
       backgroundColor: 'white',
       border: '1px solid white',
@@ -68,9 +68,11 @@ export default function Project() {
           onChange={handleChange}
           style={styles.input}
         />
-        <h1 className="my-6 py-1 text-gray-200 rounded text-3xl lg:text-5xl flex justify-center cutive">
+        <hr className=""></hr>
+        <h1 className="bg-black my-6 py-1 text-gray-200 rounded text-3xl lg:text-5xl flex justify-center cutive">
           My Projects
         </h1>
+        <hr className="py-1"></hr>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
           Check Out My Projects Below!
         </h2> */}

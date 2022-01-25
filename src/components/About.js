@@ -63,22 +63,27 @@ export default function About() {
   console.log(author);
 
   const styles = {
-    classes: isDarkMode ? 'bg-gray-700 mySection' : 'bg-img2 mySection',
+    classes: isDarkMode
+      ? 'bg-gray-700 mySection pb-20'
+      : 'pb-20 bg-img2 mySection',
     text: isDarkMode ? 'text-blue-500' : 'text-red-700',
   };
 
   return (
     <main className={styles.classes}>
-      <div className="p-3 px-3 mx-auto">
-        <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded-lg shadow-2xl lg:flex px-3">
+      <div className="p-5 mx-auto ">
+        <h1 className="rounded-t max-w-screen-sm bg-black text-white text-2xl lg:text-5xl py-4 bg-opacity-50">
+          Contact
+        </h1>
+        <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded shadow-2xl lg:flex py-6 lg:px-6">
           <img
             src={urlFor(author.authorImage).url()}
-            className="shadow-2xl rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8"
+            className=" rounded-full w-44 h-44 lg:w-64 lg:h-64 mr-8 sm:py-1 px-3"
             alt="Michael"
           />
           <div className="overflow-hidden w-10/12 p-5 justify-center rounded text-lg bg-red-200 bg-opacity-75 mt-3 sm:mb-3">
             <h1 className="p-2 m-2 text-center cursive text-3xl lg:text-5xl text-gray-100 mb-4">
-              Hey there. I'm <span className={styles.text}>{author.name}</span>
+              👋 Hey there. I'm <span className={styles.text}>Michael</span>
             </h1>
             <p className="text-center lg:text-2xl p-4">{author.bio}</p>
             <div className="text-white">
