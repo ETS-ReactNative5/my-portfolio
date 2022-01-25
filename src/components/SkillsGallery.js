@@ -138,7 +138,9 @@ class Tile extends React.Component {
           src={this.props.data.image}
           style={clickStyles}
         />
-        <h1 className="text-gray-200 text-center">{this.props.data.name}</h1>
+        <h1 className="text-gray-200 text-center mt-3">
+          {this.props.data.name}
+        </h1>
       </div>
     );
   }

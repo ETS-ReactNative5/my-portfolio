@@ -13,7 +13,7 @@
   cursor: pointer;
   overflow: hidden;
   width: 15vw;
-  height: 20vw;
+  height: 21vw;
   img {
     width: 100%;
     transition: transform 500ms ease;

@@ -20,7 +20,7 @@ class Home extends Component {
       console.log(resp.data);
       setTimeout(() => {
         this.setState({
-          quote: 'A place to inspire',
+          quote: 'My Code Dojo is here to Inspire',
           author: Date().slice(0, 16),
         });
       }, 2500);
@@ -33,7 +33,7 @@ class Home extends Component {
       setTimeout(() => {
         this.setState({
           quote:
-            'Curerntly looking to build on my current skillset listed below',
+            'Currently looking to build on my current skillset listed below',
           author: Date().slice(0, 16),
         });
       }, 7500);
@@ -56,8 +56,8 @@ class Home extends Component {
     const { isDarkMode } = this.context;
     const styles = {
       classes: isDarkMode
-        ? 'bg-gray-700 pt-16 min-w-screen bg-cover'
-        : 'bg-img pt-16 min-w-screen bg-cover',
+        ? 'bg-gray-700 pt-12 min-w-screen bg-cover'
+        : 'bg-img pt-12 min-w-screen bg-cover',
     };
     return (
       <main className={styles.classes}>
@@ -72,7 +72,7 @@ class Home extends Component {
             </h2>
           </div>
         </section>
-        <h2 class="divider line glow my-10" contenteditable></h2>
+        <hr className="divider line glow my-10" contenteditable />
         <section className="">
           <Tiles />
           <h2 className="text-white text-5xl uppercase">skillset</h2>
