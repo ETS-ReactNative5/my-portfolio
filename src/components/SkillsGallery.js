@@ -9,7 +9,7 @@ import mongo from '../images/gallery/mongodb-icon-1.svg';
 import nodejs from '../images/gallery/nodejs-icon.svg';
 import reactimg from '../images/gallery/react-1.svg';
 import tailwind from '../images/gallery/tailwind-css-2.svg';
-import MyModal from './MyModal';
+// import MyModal from './MyModal';
 
 const data = [
   {
