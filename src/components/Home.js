@@ -65,12 +65,15 @@ class Home extends Component {
     const { isDarkMode } = this.context;
     const styles = {
       classes: isDarkMode
-        ? 'bg-gray-700 pt-12 min-w-screen bg-cover'
-        : 'bg-img pt-12 min-w-screen bg-cover',
+        ? 'bg-gray-700 py-24 min-w-screen bg-cover'
+        : 'bg-img py-24 min-w-screen bg-cover',
     };
 
     return (
       <main className={styles.classes}>
+        <h2 className="px-3 mb-6 text-white lg:text-5xl uppercase">
+          Get Motivated
+        </h2>
         <section className="content justify-center lg:px-8 lg:mx-20">
           <div className="h-auto grid min-w-screen wrapper pb-5  mx-4 rounded shadow-2xl">
             {/* <h1 className="pt-3 text-center text-4xl lg:text-6xl text-green-100 font-bold cursive lg:home-name">Hello. I'm <span className="text-purple-800">Michael</span></h1> */}
@@ -83,15 +86,14 @@ class Home extends Component {
             <h3>{this.state.reload}</h3>
           </div>
         </section>
-        <hr className="divider line glow my-10" contenteditable />
-        <h2 className="px-3 text-white lg:text-5xl uppercase">skillset</h2>
+        <hr className="divider line glow my-24" contenteditable />
+        <h2 className="px-3 text-white lg:text-5xl uppercase">
+          skillset noteables
+        </h2>
 
         <section className="">
           <Tiles />
         </section>
-        <h5 className="text-xs p-6 text-white uppercase">
-          Click image for more info
-        </h5>
       </main>
     );
   }
