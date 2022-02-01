@@ -10,6 +10,7 @@
 .reload-icon {
   width: 100%;
   font-size: 8;
+  float: left;
   transition: transform 500ms ease;
   &:active {
     transform: scale(1.25);

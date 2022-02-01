@@ -21,10 +21,6 @@
   text-align: center;
 }
 
-/* .reload-icon {
-  font-size: 8;
-} */
-
 @-webkit-keyframes rainbow {
   0% {
     background-position: 0% 82%;
