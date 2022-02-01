@@ -13,7 +13,6 @@ export const ContactUs = () => {
 
     console.log(process.env);
     // emailjs.init(process.env.REACT_APP_USER_ID);
-
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -30,7 +29,6 @@ export const ContactUs = () => {
         }
       );
   };
-
   return (
     <form ref={form} onSubmit={sendEmail} className="">
       <label className="flex">Name</label>

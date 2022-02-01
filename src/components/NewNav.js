@@ -91,7 +91,7 @@ export default function Navbar({ fixed, props }) {
                   to="/post"
                 >
                   <i className="fas fa-blog myIcon"></i>
-                  <span className="ml-2 underline">Blog</span>
+                  <span className="ml-2 ">Blog</span>
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -100,7 +100,7 @@ export default function Navbar({ fixed, props }) {
                   to="/project"
                 >
                   <i className="fas fa-folder-open myIcon "></i>
-                  <span className="ml-2 underline">Projects</span>
+                  <span className="ml-2 ">Projects</span>
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -109,7 +109,7 @@ export default function Navbar({ fixed, props }) {
                   to="/about"
                 >
                   <i className="fas fa-user-circle myIcon "></i>
-                  <span className="ml-2 underline">Contact</span>
+                  <span className="ml-2 ">Contact</span>
                 </NavLink>
               </li>
             </ul>

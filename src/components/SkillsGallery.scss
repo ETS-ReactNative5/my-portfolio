@@ -7,6 +7,15 @@
   justify-content: center;
 }
 
+.reload-icon {
+  width: 100%;
+  font-size: 8;
+  transition: transform 500ms ease;
+  &:active {
+    transform: scale(1.25);
+  }
+}
+
 .tile {
   margin: 15px;
   cursor: pointer;

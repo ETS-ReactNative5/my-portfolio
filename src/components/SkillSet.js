@@ -9,7 +9,6 @@ export default function SkillSet() {
         <h2 className="px-3 text-white lg:text-5xl uppercase">
           skillset noteables
         </h2>
-
         <Tiles />
       </section>
     </div>

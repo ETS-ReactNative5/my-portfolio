@@ -14,7 +14,6 @@ class Home extends Component {
         ? 'bg-gray-700 py-24 min-w-screen bg-cover'
         : 'bg-img py-24 min-w-screen bg-cover',
     };
-
     return (
       <main className={styles.classes}>
         <Hero />
