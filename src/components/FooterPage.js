@@ -21,28 +21,25 @@ class FooterPage extends Component {
             <div className="footer-col">
               <h4>Projects</h4>
               <ul>
-                {/* <li className="">
-                        <a className="hover:text-blue-300" target="_blank" rel="noreferrer" href="https://dreamy-knuth-237df8.netlify.app/"><i className="fas fa-2x fa-calendar-check"></i> NextEvent</a>
-                    </li> */}
                 <li className="">
                   <a
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://optimistic-bose-278208.netlify.app/"
+                    href="https://suspicious-liskov-bc2bcf.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-portrait"></i> NFT Minter
+                    <i className="fas fa-2x fa-language"></i> Multi-Language &
+                    Dark Mode
                   </a>
-                </li>
-
+                </li>{' '}
                 <li className="">
                   <a
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://gracious-haibt-d0bc69.netlify.app/"
+                    href="https://wonderful-joliot-530457.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-grin-squint-tears"></i> Dad Jokes
+                    <i className="fas fa-2x fa-palette"></i> Handy Palette
                   </a>
                 </li>
                 <li className="">
@@ -50,20 +47,9 @@ class FooterPage extends Component {
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://mcooper7649.github.io/CSS-TINDOG/"
+                    href="https://compassionate-borg-a5e992.netlify.app"
                   >
-                    <i className="fa fa-2x fa-mobile"></i> Tindog
-                  </a>
-                </li>
-
-                <li className="">
-                  <a
-                    className="hover:text-blue-300"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://thirsty-goodall-d53ffc.netlify.app/"
-                  >
-                    <i className="fas fa-2x fa-lightbulb"></i> LightsOut
+                    <i className="fas fa-2x fa-images"></i> Image Finder
                   </a>
                 </li>
                 <li className="">
@@ -71,9 +57,20 @@ class FooterPage extends Component {
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://mcooper7649.github.io/angularjs_code_challenge/bootstrap_template/index.html"
+                    href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-euro-sign"></i> Currency Creator
+                    <i className="fa fa-2x fa-edit"></i> Todo List
+                  </a>
+                </li>
+                <li className="">
+                  <a
+                    className="hover:text-blue-300"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://whoami-feathr.herokuapp.com/"
+                  >
+                    <i class="fa fa-2x fa-solid fa-id-badge"></i> User Login and
+                    Dashboard
                   </a>
                 </li>
               </ul>
@@ -127,9 +124,9 @@ class FooterPage extends Component {
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://cranky-snyder-38237a.netlify.app/"
+                    href="https://thirsty-goodall-d53ffc.netlify.app/"
                   >
-                    <i className="fa fa-2x fa-gem"></i> Number Gen
+                    <i className="fas fa-2x fa-lightbulb"></i> LightsOut
                   </a>
                 </li>
               </ul>
@@ -137,25 +134,28 @@ class FooterPage extends Component {
             <div className="footer-col">
               <h4 className="">Utilities</h4>
               <ul>
+                {/* <li className="">
+                        <a className="hover:text-blue-300" target="_blank" rel="noreferrer" href="https://dreamy-knuth-237df8.netlify.app/"><i className="fas fa-2x fa-calendar-check"></i> NextEvent</a>
+                    </li> */}
                 <li className="">
                   <a
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://suspicious-liskov-bc2bcf.netlify.app/"
+                    href="https://optimistic-bose-278208.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-language"></i> Multi-Language &
-                    Dark Mode
+                    <i className="fas fa-2x fa-portrait"></i> NFT Minter
                   </a>
-                </li>{' '}
+                </li>
+
                 <li className="">
                   <a
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://wonderful-joliot-530457.netlify.app/"
+                    href="https://gracious-haibt-d0bc69.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-palette"></i> Handy Palette
+                    <i className="fas fa-2x fa-grin-squint-tears"></i> Dad Jokes
                   </a>
                 </li>
                 <li className="">
@@ -163,9 +163,9 @@ class FooterPage extends Component {
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://compassionate-borg-a5e992.netlify.app"
+                    href="https://mcooper7649.github.io/CSS-TINDOG/"
                   >
-                    <i className="fas fa-2x fa-images"></i> Image Finder
+                    <i className="fa fa-2x fa-mobile"></i> Tindog
                   </a>
                 </li>
                 <li className="">
@@ -173,9 +173,19 @@ class FooterPage extends Component {
                     className="hover:text-blue-300"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
+                    href="https://mcooper7649.github.io/angularjs_code_challenge/bootstrap_template/index.html"
                   >
-                    <i className="fa fa-2x fa-edit"></i> Todo List
+                    <i className="fas fa-2x fa-euro-sign"></i> Currency Creator
+                  </a>
+                </li>
+                <li className="">
+                  <a
+                    className="hover:text-blue-300"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://cranky-snyder-38237a.netlify.app/"
+                  >
+                    <i className="fa fa-2x fa-gem"></i> Number Gen
                   </a>
                 </li>
               </ul>
