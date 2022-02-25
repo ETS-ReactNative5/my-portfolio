@@ -100,6 +100,7 @@ export default function Project() {
                       {' '}
                       {project.title}
                     </p>
+                    <p>{console.log(project)}</p>
                   </Button>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">

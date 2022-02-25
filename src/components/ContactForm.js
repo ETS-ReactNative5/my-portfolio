@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { Button } from 'react-materialize';
 
 require('dotenv').config();
-console.log(process.env);
 
 export const ContactUs = () => {
   const form = useRef();
@@ -11,7 +10,6 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(process.env);
     // emailjs.init(process.env.REACT_APP_USER_ID);
     emailjs
       .sendForm(
