@@ -31,7 +31,7 @@ export default function Project() {
       }
       }`
       )
-      .then((data) => setProjectData(data) + console.log(data))
+      .then((data) => setProjectData(data))
       .catch(console.error);
   }, []);
 
@@ -120,6 +120,17 @@ export default function Project() {
                 <p className="my-6 text-sm lg:text-lg text-gray-700 leading-relaxed">
                   {project.description}
                 </p>
+                <ul className="my-6 text-sm lg:text-lg text-gray-700 leading-relaxed">
+                  {project.tags &&
+                    project.tags.map((tag, index) => {
+                      return (
+                        <li key={index} className="project-tags">
+                          {tag}
+                        </li>
+                      );
+                    })}
+                </ul>
+
                 <Button
                   className="project-btn"
                   onClick={() => window.open(project.link, '_blank')}
