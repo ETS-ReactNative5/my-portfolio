@@ -69,7 +69,7 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://whoami-feathr.herokuapp.com/"
                   >
-                    <i class="fa fa-2x fa-solid fa-id-badge"></i>Full Stack
+                    <i class="fa fa-2x fa-solid fa-id-badge"></i> Full Stack
                     Python3/Flask Stack | User Login and Dashboard
                   </a>
                 </li>
@@ -80,8 +80,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://goalsetter-redux-dashboard.herokuapp.com/"
                   >
-                    <i className="fa-solid fa-2x fa-arrow-right-to-bracket"></i>
-                    Full Stack MERN Stack | User Login and Dashboard
+                    <i className="fa-solid fa-arrow-right-to-bracket"></i> Full
+                    Stack MERN Stack | User Login and Dashboard
                   </a>
                 </li>
               </ul>
