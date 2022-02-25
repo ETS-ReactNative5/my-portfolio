@@ -28,8 +28,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://suspicious-liskov-bc2bcf.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-language"></i> Multi-Language &
-                    Dark Mode
+                    <i className="fas fa-2x fa-language"></i> Frontend Only |
+                    Multi-Language & Dark Mode User Login
                   </a>
                 </li>{' '}
                 <li className="">
@@ -39,7 +39,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://wonderful-joliot-530457.netlify.app/"
                   >
-                    <i className="fas fa-2x fa-palette"></i> Handy Palette
+                    <i className="fas fa-2x fa-palette"></i>React with Local
+                    Storage | Handy Palette
                   </a>
                 </li>
                 <li className="">
@@ -49,7 +50,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://compassionate-borg-a5e992.netlify.app"
                   >
-                    <i className="fas fa-2x fa-images"></i> Image Finder
+                    <i className="fas fa-2x fa-images"></i>React with Axios |
+                    Image Finder
                   </a>
                 </li>
                 <li className="">
@@ -59,7 +61,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://brave-visvesvaraya-bfe6e1.netlify.app/"
                   >
-                    <i className="fa fa-2x fa-edit"></i> Todo List
+                    <i className="fa fa-2x fa-edit"></i>Full Stack MERN | Todo
+                    List
                   </a>
                 </li>
                 <li className="">
@@ -69,7 +72,7 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://whoami-feathr.herokuapp.com/"
                   >
-                    <i class="fa fa-2x fa-solid fa-id-badge"></i> Full Stack
+                    <i className="fa fa-2x fa-solid fa-id-badge"></i> Full Stack
                     Python3/Flask Stack | User Login and Dashboard
                   </a>
                 </li>
@@ -80,8 +83,8 @@ class FooterPage extends Component {
                     rel="noreferrer"
                     href="https://goalsetter-redux-dashboard.herokuapp.com/"
                   >
-                    <i className="fa-solid fa-arrow-right-to-bracket"></i> Full
-                    Stack MERN Stack | User Login and Dashboard
+                    <i className="fa fa-2x fa-solid fa-id-badge"></i> Full Stack
+                    MERN | User Login and Dashboard
                   </a>
                 </li>
               </ul>
