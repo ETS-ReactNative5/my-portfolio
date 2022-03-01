@@ -72,9 +72,6 @@ export default function About() {
   return (
     <main className={styles.classes}>
       <div className="p-5 mx-auto ">
-        <h1 className="rounded-t max-w-screen-sm bg-black text-white text-2xl lg:text-5xl py-4 bg-opacity-50">
-          Contact
-        </h1>
         <section className="overflow-hidden max-w-6xl items-center bg-black bg-opacity-50 rounded shadow-2xl lg:flex py-6 lg:px-6">
           <img
             src={urlFor(author.authorImage).url()}
