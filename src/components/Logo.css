@@ -113,3 +113,11 @@ hr.myHr {
 .project-tags:last-child:after {
   content: ' ';
 }
+
+.section-title {
+  text-align: center;
+}
+
+.divider {
+  margin: 2rem 8rem;
+}

@@ -5,8 +5,8 @@ export default function SkillSet() {
   return (
     <div>
       <section className="">
-        <hr className="divider line glow my-24" contenteditable />
-        <h2 className="px-3 text-white lg:text-5xl uppercase">
+        <hr className="divider line glow" contenteditable />
+        <h2 className="section-title px-3 text-white lg:text-5xl uppercase">
           skillset noteables
         </h2>
         <Tiles />

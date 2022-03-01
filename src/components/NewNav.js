@@ -36,7 +36,7 @@ export default function Navbar({ fixed, props }) {
     <>
       <nav
         style={styleDiv}
-        className="header-bg h-auto relative flex flex-wrap items-center justify-between"
+        className="md:px-5 header-bg h-auto relative flex flex-wrap items-center justify-between"
       >
         <div className="container flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:justify-start">
