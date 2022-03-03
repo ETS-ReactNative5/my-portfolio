@@ -58,7 +58,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div>
-        <h2 className="section-title px-3 mb-6 text-white lg:text-5xl uppercase">
+        <h2 className="section-title px-3 mb-6 text-white lg:text-6xl uppercase">
           Get Motivated
         </h2>
         <section className="content justify-center lg:px-8 lg:mx-20">

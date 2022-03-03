@@ -6,7 +6,7 @@ export default function SkillSet() {
     <div>
       <section className="">
         <hr className="divider line glow" contenteditable />
-        <h2 className="section-title px-3 text-white lg:text-5xl uppercase">
+        <h2 className="section-title px-3 text-white lg:text-6xl uppercase">
           skillset noteables
         </h2>
         <Tiles />
