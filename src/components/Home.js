@@ -11,8 +11,8 @@ class Home extends Component {
     const { isDarkMode } = this.context;
     const styles = {
       classes: isDarkMode
-        ? 'bg-gray-700 py-24 min-w-screen bg-cover'
-        : 'bg-img py-24 min-w-screen bg-cover',
+        ? 'bg-gray-700 lg:py-24 min-w-screen bg-cover'
+        : 'bg-img py-6 lg:py-24 min-w-screen bg-cover',
     };
     return (
       <main className={styles.classes}>

@@ -117,8 +117,15 @@ hr.myHr {
 .section-title {
   text-align: left;
   margin: 2rem 8rem;
+  text-align-last: left;
 }
 
 .divider {
   margin: 2rem 8rem;
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    text-align-last: center;
+  }
 }

@@ -17,7 +17,7 @@ export default function TikTokGallery() {
   return (
     <section className="">
       <hr className="divider line glow my-24" contentEditable />
-      <h2 className="section-title px-3 text-white lg:text-6xl uppercase">
+      <h2 className="section-title px-3 text-white lg:text-4xl uppercase">
         TikTok Tutorials
       </h2>
 
