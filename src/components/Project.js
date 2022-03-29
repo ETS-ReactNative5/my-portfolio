@@ -43,6 +43,10 @@ export default function Project() {
     project.title.toLowerCase().includes(searchField.toLowerCase())
   );
 
+  const dateSorted = filteredProjects.sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+
   const styles = {
     main: isDarkMode
       ? 'bg-gray-700 min-h-screen lg:p-12'
@@ -76,8 +80,8 @@ export default function Project() {
           Check Out My Projects Below!
         </h2> */}
         <section className="grid lg:grid-cols-2 gap-8">
-          {filteredProjects &&
-            filteredProjects.map((project, index) => (
+          {dateSorted &&
+            dateSorted.map((project, index) => (
               <article
                 key={index}
                 className="relative rounded-lg shadow-xl bg-white p-2 lg:p-16"
